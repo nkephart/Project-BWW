@@ -1,0 +1,15 @@
+// RGBa support
+// Source > http://blog.lanceli.com/2014/03/compass-cross-browser-rgba-background-mixin.html
+
+@mixin rgba-background($color) {
+  @include filter-gradient($color,$color);
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 or $legacy-support-for-ie8 {
+    background: transparent;
+ 
+    // Set filter as none for IE9+ (IE9+ supprots RGBa)
+    :root & {
+      filter: none\0/IE9;
+    }
+  }
+  background: $color;
+}

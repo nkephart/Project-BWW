@@ -1,0 +1,78 @@
+// Typography partial
+
+%text-base {
+  font-weight: 400; 
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.615;
+//  @include font-smoothing;  
+}
+
+%text-serif {
+  @extend %text-base;
+  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "times new roman", serif; 
+}
+
+%text-sans-serif {
+  @extend %text-base;
+  font-family: "arial", sans-serif;
+}
+
+a, form, li, p, span, table, ul, h4, h5 {
+  @extend %text-serif;
+  font-size: 15px;
+}
+
+h1 {
+  @extend %text-serif;
+  font-size: 21px;
+  visibility: hidden;
+  a {
+    @extend h1;
+    visibility: visible;
+  }
+}
+
+h2, h3 {
+  @extend %text-serif;
+  font-size: 21px;
+  a {
+    @extend h2;
+  }
+}
+
+h4, h5 {
+  @extend %text-serif;
+  font-size: 15px;
+  a {
+    @extend h4;
+  }
+}
+
+.font-small {
+  font-size: 13px;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.nav-panel-link {
+  font-size: 18px;
+}
+
+.glass-panel-table3 {
+  th, td {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+footer p {
+  font-size: 13px;
+  a {
+    font-size: inherit;
+  }
+}

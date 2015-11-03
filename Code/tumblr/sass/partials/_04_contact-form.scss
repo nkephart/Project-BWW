@@ -1,0 +1,127 @@
+// Contact form partial
+
+input, textarea, button {
+  margin: 0;
+  padding: 5px 8px;
+  line-height: 1.615;
+  border: solid 1px grey;
+  font-size: 13px;
+  @include border-radius(1px);
+}
+
+textarea {
+  resize: none;  
+}
+
+.contact-panel-form {
+  position: relative;
+  width: 490px;
+  margin: 0 auto;
+}
+
+.formtest {
+  position: relative;
+  width: 100%;
+  height: 477px;
+  margin-bottom: 15px;
+  padding: 30px 50px 15px;
+  background: #fafafa;
+  border: solid 1px grey;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 476px;
+    left: 240px;
+    border: solid 6px transparent;
+    border-top: solid 6px grey;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 475px;
+    left: 240px;
+    border: solid 6px transparent;
+    border-top: solid 6px #fafafa;
+  }
+}
+
+.formtest-inside {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 3px;
+}
+
+.sent-message {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.panel-form-subject > ul {
+  li {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+ 
+.panel-form-name, .panel-form-email, .panel-form-number {
+  position: relative;
+  width: 260px;
+  margin-bottom: 13px;
+  -webkit-appearance: none;
+}
+
+.panel-form-text {
+  position: relative;
+  width: 390px;
+  margin-bottom: 13px;
+  -webkit-appearance: none;
+}
+
+#ss-submit {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background: #ba429b;
+  border-color: #ba429b;
+  -webkit-appearance: none;
+  @include border-bottom-radius(3px);
+}
+
+.click-on {
+  color: white;
+  @include box-shadow(0 4px darken(#ba429b,15%));
+  &:hover {
+    top: 1px;
+    @include box-shadow(0 3px darken(#ba429b,15%));
+  }
+  &:active {
+    top: 4px;
+    @include box-shadow(0 0 darken(#ba429b,15%));
+  }
+}
+
+.click-off {
+  color: darken(#ba429b,15%);
+  top: 4px;
+  @include box-shadow(0 0 darken(#ba429b,15%));
+}
+
+@include keyframes(lilshake) {
+  0%, 100% {@include transform(translateX(0));}
+  17%, 50%, 83% {@include transform(translateX(-5px));}
+  33%, 67% {@include transform(translateX(5px));}
+}
+
+.click-shake {
+  @include animation-name(lilshake);
+  @include animation-duration(0.5s);
+}
+
+.form-warning {
+  border-color: red;
+  @include input-placeholder {
+    color: red;
+  }
+}

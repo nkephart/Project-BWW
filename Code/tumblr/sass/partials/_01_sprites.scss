@@ -1,0 +1,54 @@
+// Import
+
+@import "compass/utilities/sprites";
+@import "../img/i01_banner/*.png";
+@import "../img/i03-2_cafe/*.png";
+@import "../img/i04_kidsroom/*.png";
+@import "../img/i05-1_glass/*.png";
+@import "../img/i05-2_glass/*.png";
+
+// Include
+
+@include all-i01_banner-sprites;
+@include all-i03-2_cafe-sprites;
+@include all-i04_kidsroom-sprites;
+@include all-i05-1_glass-sprites;
+@include all-i05-2_glass-sprites;
+
+// Individual sprite styles
+
+%sprite {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.i01_banner-sprite {
+  @extend %sprite;
+  width: 878px;
+  height: 210px;
+}
+
+.i03-2_cafe-sprite {
+  @extend %sprite;
+  width: 128px;
+  height: 116px;
+}
+
+.i04_kidsroom-sprite {
+  @extend %sprite;
+  width: 280px;
+  height: 175px;
+}
+
+.i05-1_glass-sprite {
+  @extend %sprite;
+  width: 424px;
+  height: 93px;
+}
+
+.i05-2_glass-sprite {
+  @extend %sprite;
+  width: 122px;
+  height: 122px;
+}
