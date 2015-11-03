@@ -56,6 +56,7 @@
         <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
         <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
         {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+        <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
       </ol>
     </nav>
   </header>
@@ -63,12 +64,11 @@
   {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
-
   <section>
     <h2 id="about">山のパン屋について</h2>
     <div>
       <h3>山のパン屋</h3>
-      <p>「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った<br />自然酵母＋国産小麦＋塩＋水のみで<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p>
+      <p>「自然酵母」山のパン屋は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った<br />自然酵母＋国産小麦＋塩＋水のみで<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p>
       <div>image</div>
     </div>
     <div>
@@ -89,7 +89,41 @@
       <p></p>
     </div>
   </section>
-
+  
+  <section>
+    <h2 id="contact">お問い合わせ</h2>
+    <div id="contact-form-wrapper">
+      <form action="https://docs.google.com/forms/d/1dEOSAopcxvSCyg9V_3R-V6Mk9VHAEPZmXUaUg6RnEzY/formResponse" method="post" name="ss-form" id="ss-form" class="form-container" target="submit_iframe" onsubmit="return checkForm()">
+        <iframe hidden name="submit_iframe" id="submit_iframe"></iframe>
+        <section>
+          <table>
+            <tr>
+              <td>お名前</td>
+              <td><input type="text" size="30" name="entry.1902549149" id="entry_1902549149" class="form-name" dir="auto" aria-label="Name" aria-required="true" required></td>
+            </tr>
+            <tr>
+              <td>メールアドレス</td>
+              <td><input type="email" size="30" name="entry.441788654" id="entry_441788654" class="form-email" dir="auto" aria-label="E-Mail Address" aria-required="true" required></td>
+            </tr>
+            <tr>
+              <td>電話番号</td>
+              <td><input type="phone" size="30" name="entry.441788654" id="entry_441788654" class="form-email" dir="auto" aria-label="E-Mail Address" aria-required="true" required></td>
+            </tr>
+            <tr>
+              <td>お問い合わせ内容</td>
+              <td><textarea name="entry.723528064" rows="8" cols="50" id="entry_723528064" class="form-text" dir="auto" aria-label="Message"></textarea></td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <input type="hidden" name="draftResponse" value="[,,&quot;5969303432463856438&quot;]">
+          <input type="hidden" name="pageHistory" value="0">
+          <input type="hidden" name="fbzx" value="5969303432463856438">
+          <button type="submit" name="submit" id="ss-submit">送信</button>
+        </section>
+      </form>
+    </div>
+  </section>
   {/block:IndexPage}
   {block:TagPage}-->{/block:TagPage}
   {block:SearchPage}-->{/block:SearchPage}
@@ -101,7 +135,7 @@
     <section>
       {block:Title}<h2 class="tag-name mb50">{Title}</h2>{/block:Title}
       {Body}
-      <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+      <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
     </section>
     {/block:Text}
 
@@ -109,7 +143,7 @@
     <section>
       {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
       {block:Caption}{Caption}{block:Caption}
-      <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+      <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
     </section>
     {/block:Photo}
     {/block:Posts}  
@@ -126,7 +160,7 @@
         <section>
           {block:Title}<h3 class="title-tagged">{Title}</h3>{/block:Title}
           {Body}
-          <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+          <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
         </section>
       </li>
       {/block:Text}
@@ -136,7 +170,7 @@
         <section>
           <a href="{PhotoURL-500}" class="boxer" title="{Caption}" data-gallery="gallery"><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>
           {block:Caption}{Caption}{/block:Caption}
-          <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+          <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
         </section>
       </li>
       {/block:Photo}
@@ -157,7 +191,6 @@
   <footer role="contentinfo" class="cf">
     <ul>
       <li>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a></li>
-      <li>A&nbsp;<a href="" title="" target="_blank">OUR*IRO</a>&nbsp;product</li>
     </ul>
   </footer>
 </article>
