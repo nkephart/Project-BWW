@@ -13,79 +13,30 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background: #fafafa;
+  background: #ffffff;
 }
 
-// Global
+// Global header
 
-#header-image {
+header {
   display: block;
-  width: 1024px;
-  margin: 0 auto;
-}
-
-article {
-  display: block;
-  position: relative;
-  width: 1024px;
-  margin: 0 auto;
-  background: white;
-  border-left: dashed 1px #ddd;
-  border-right: dashed 1px #ddd;
-}
-
-.panel {
-  position: relative;
   width: 100%;
-  padding: 0 72px;
-}
-
-.panel-footer {
-  margin-top: 13px;
-  text-align: right;
-  a {
-    position: relative;
-    height: 15px;
-    &:before {
-      content: "";
-      position: absolute;
-      left: -23px;
-      width: 18px;
-      height: 18px;
-      background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/l1.png") no-repeat;
-      @include background-size(18px);
-    }
-  }
-}
-
-// Header panel
-
-#header-panel {
-  text-align: center;
-}
-
-h1 {
-  position: absolute;
-  left: 455px;
-  top: -80px;
-  width: 110px;
-  height: 110px;
-  margin: 0;
-  a {
+  h1 a {
     position: absolute;
-    left: 0;
-    top: 0;
+    background: url() 0 0 no-repeat;
+  }
+  img {
     width: 100%;
-    height: 100%;
-    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i02-1.jpg") no-repeat;
-    @include border-radius(10px);
-    @include background-size(110px);
+    filter: brightness(95%);
   }
 }
 
 nav {
-  padding-top: 50px;
-  a {
+  width: 100%;
+  margin: 0 auto;
+  padding: 21px 0;
+  text-align: center;
+  ol li {
     margin-right: 21px;
     padding-bottom: 5px;
     border-bottom: solid 1px transparent;
@@ -95,388 +46,15 @@ nav {
       margin: 0;
     }
     &:hover {
-      color: #ba429b;
-      border-color: #ba429b;
     }
   }
 }
 
-// News panel
+//
 
-.news-panel-contents {
-  display: block;
+.contents-wrapper {
+  max-width: 1024px;
   position: relative;
-  width: 414px;
-  margin: 0 auto;
-  h4 {
-    margin: 0;
-    @include transition(all 0.1s ease-in-out);
-    &:hover {
-      color: #ba429b;
-    }
-  }
-  ul {
-    margin-top: 13px;
-    padding: 5px;
-    border: solid 1px grey;
-    li {
-      font-size: 13px;
-      a {
-        font-size: inherit;
-        @include transition(all 0.1s ease-in-out);
-        &:hover {
-          color: #ba429b;
-        }
-      }
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      top: 25px;
-      left: 13px;
-      border: solid 6px transparent;
-      border-bottom: solid 6px grey;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 26px;
-      left: 13px;
-      border: solid 6px transparent;
-      border-bottom: solid 6px white;
-    }
-  }
-}
-
-// Intro panel
-
-#intro-panel {
-  width: 100%;
-  height: 1031px;
-  padding-top: 100px;
-  text-align: center;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/i1.png") 0 0 no-repeat;
-}
-
-.nav-base {
-  height: 100%
-}
-
-.nav-panel-link {
-  position: absolute;
-  width: 124px;
-  height: 124px;
-  text-align: center;
-  line-height: 124px;
-  border: solid 1px grey;
-  @include border-radius(50%);
-}
-
-.nav-panel-cf {
-  top: 535px;
-  left: 120px;
-}
-
-.nav-panel-kr {
-  top: 535px;
-  right: 140px;
-}
-
-.nav-panel-gs {
-  top: 671px;
-  right: 140px;
-}
-
-// Cafe panel
-
-.cafe-panel-image1 {
-  float: right;
-  width: 478px;
-  margin-left: 30px;
-  span {
-    float: left;
-    &:first-child {
-      width: 100%;
-      height: 270px;
-      background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-1-c1.png") no-repeat;
-    }
-    &:last-child {
-      margin-top: 10px;
-    }
-  }
-}
-
-.cafe-panel-menu {
-  position: relative;
-  z-index: 10;
-}
-
-.cafe-panel-image2 {
-  float: left;
-  width: 262px;
-  margin-right: 30px;
-  span {
-    float: left;
-    &:last-child {
-      display: block;
-      width: 128px;
-      height: 116px;
-      border: solid 1px #ba429b;
-    }
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding: 30% 5%;
-      text-align: center;
-      color: #ba429b;
-      @include transition(all 0.1s ease-in-out);
-      &:hover {
-        background: #ba429b;
-        color: white;
-      }
-    }
-  }
-}
-
-.cafe-panel-bg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 180px;
-  height: 180px;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c8.png") no-repeat;
-  z-index: -10;
-}
-
-.cafe-panel-table td {
-  &:first-child {
-    padding-right: 3em;
-  }
-}
-
-// Kidsroom panel
-
-.kidsroom-panel-image {
-  float: right;
-  width: 280px;
-  margin-left: 30px;
-  span {
-    float: left;
-  }
-}
-
-.kidsroom-panel-text {
-  height: 356px;
-}
-
-// Glass panel
-
-.glass-panel-text1 {
-  float: left;
-  width: 424px;
-  margin-right: 30px;
-}
-
-.glass-panel-table1, .glass-panel-table2, .access-panel-table {
-  td {
-    &:first-child {
-      padding-right: 1em;
-    }
-  }
-}
-
-.glass-panel-text2 {
-  float: left;
-  width: 424px;
-}
-
-.glass-panel-element {
-  float: left;
-  width: 424px;
-  height: 195px;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/g6.png") 37px 0px no-repeat;  
-}
-
-.glass-panel-text3 {
-  clear: left;
-}
-
-.glass-panel-table3 {
-  width: 100%;
-  text-align: center;
-  caption {
-    border: solid 1px grey;
-    border-bottom: none;
-    background: #f5f5f5;
-  }
-  tr {
-    height: 2em;
-    th, td {
-      width: 146px;
-      height: 5em;
-      border: solid 1px grey;  
-    }
-    th {
-      background: #fafafa;
-    }
-  }
-}
-
-.glass-panel-image {
-  float: left;
-  width: 250px;
-  margin-right: 30px;
-  span {
-    float: left;
-    border: solid 1px grey;
-    &:last-child {
-      display: block;
-      width: 122px;
-      height: 122px;
-      border: solid 1px #4aa2f2;
-    }
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding: 33% 15%;
-      text-align: center;
-      color: white;
-      color: #4aa2f2;
-      @include transition(all 0.1s ease-in-out);
-      &:hover {
-        background: #4aa2f2;
-        color: white;
-      }
-    }
-  }
-}
-
-.glass-panel-text4 {
-  float: left;
-  width: 598px;
-}
-
-// Access panel
-
-.access-panel-image {
-  position: relative;
-  float: right;
-  width: 376px;
-  margin-left: 30px;
-}
-
-.google-map-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-}
-
-// Contact panel
-
-#contact-panel {
-  margin-bottom: -110px;
-}
-
-// Footer
-
-.footer-element {
-  display: block;
-  width: 1022px;
-  height: 240px;
-  margin: 0 auto;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f1.png") no-repeat;  
-}
-
-article > footer {
-  width: 100%;
-  height: 50px;
-  padding: 0 72px;
-  background: #cfdce5;
-  vertical-align: middle;
-  border-top: dashed 1px #ddd;
-  p {
-    margin: 14px 0 12px;
-    line-height: 26px;
-  }
-}
-
-.footer-icon-fb {
-  float: right;
-  width: 32px;
-  height: 32px;
-  margin: 9px 0;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f2.png") no-repeat;    
-  &:hover {
-    @include filter(brightness(125%));
-  }
-}
-
-// Widgets
-
-.mt0 {
-  margin-top: 0;
-}
-
-.mb0 {
-  margin-bottom: 0;
-}
-
-.mb6 {
-  margin-bottom: 6px;
-}
-
-.mb50 {
-  margin-bottom: 50px;
-}
-
-.mb65 {
-  margin-bottom: 65px;
-}
-
-.mb130 {
-  margin-bottom: 130px;
-}
-
-.mr6 {
-  margin-right: 6px;
-}
-
-.mr22 {
-  margin-right: 22px;
-}
-
-.pl0 {
-  padding-left: 0;
-}
-
-.ls-c {
-  list-style: circle;
-}
-
-.ls-n {
-  list-style: none;
-}
-
-.ls-rice {
-  list-style: none;
-  &:before {
-    content: "※";
-    position: absolute;
-    text-indent: -1.4em;
-    line-height: 1.6em;
-  }  
-}
-
-.ls-fix20 {
-  padding-left: 20px;
-}
-
-.ls-fix300 {
-  padding-left: 300px;
 }
 
 .link-button {
@@ -504,22 +82,6 @@ article > footer {
   &:hover {
     color: #ba429b;
   }
-}
-
-.page-count {
-  display: block;
-  text-align: center;
-}
-
-.tag-name {
-  text-align: center;
-}
-
-.post-date {
-  margin-top: 21px;
-  font-style: italic;
-  font-size: 13px;
-  color: grey;
 }
 
 .cf {

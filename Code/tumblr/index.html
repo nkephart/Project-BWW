@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2015.09.19 / Ver 0.1
+  Last updated 2015.11.14 / Ver 0.2
 -->
 <html>
 <head>
@@ -34,8 +34,8 @@
 <link rel="apple-touch-icon" href="{PortraitURL-128}">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
 <!-- CSS files -->
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/zsanxt7ib/normalize.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/ePbnxt7ir/style.css">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -45,56 +45,71 @@
 <body>
 <a id="top-ancher"></a>
 <article role="main">
-  <header role="banner" id="header-panel" class="panel">
-    <div id="header-image">
-      <img src="{HeaderImage}" />
-      <h1><a href="{BlogURL}" title="{BlogTitle}">{BlogTitle}</a></h1>
-    </div>
-    <nav role="navigation" class="mb50">
-      <ol>
-        <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li>
-        <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
-        <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
-        {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
-        <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
-      </ol>
-    </nav>
+  <header role="banner">
+    <h1><a href="{BlogURL}"></a></h1>
+    <img src="{HeaderImage}" />
+    <div id="header-calendar"></div>
   </header>
+  <nav role="navigation">
+    <ol>
+      <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li>
+      <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
+      <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
+      {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+      <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
+    </ol>
+  </nav>
   
   {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
-  <section>
-    <h2 id="about">山のパン屋について</h2>
-    <div>
-      <h3>山のパン屋</h3>
-      <p>「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った<br />自然酵母＋国産小麦＋塩＋水のみで<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p>
-      <div>image</div>
-    </div>
-    <div>
-      <div>image</div>
-      <h3>自然酵母</h3>
-      <p>イースト菌や市販の天然酵母は使わず、麹から手づくりをしている酒種酵母や甘酒酵母、旬の果物酵母を使っています。米が主原料の甘酒酵母は麹を作り始めてから酵母ができるまで2週間、酒種酵母は1ヶ月半かかります。長い時間かけて作られた酵母、そして低温でゆっくり発酵させた酵母パンは時間が経つにつれ熟成され風味が変化していきます。</p>
-    </div>
-    <div>
-      <h3>パンについて</h3>
-      <p>田舎パン、自家製あんこのあんパン、レーズン蒸しパン、フォッカッチャ、ワインブレッド、黒豆パン、酵母マフィン、全粒粉のコンプレ、その他季節の酵母パンやドライフルーツやナッツのパンなどを、季節に合わせて作っています。<br />バター、玉子、砂糖は原則使用していませんが、バターロールやクロワッサンはバターを使用、自家製あんこやピールに甜菜糖を使用しています。毎回、作るパンが異なりますので、詳細はお問い合わせください。</p>
-      <div>image</div>
-    </div>
-    <div>
-      <div>image</div>
-      <h3>主な原材料</h3>
-      <p><b>＜酵母＞</b>自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母<br /><b>＜小麦粉＞</b>低農薬群馬県産小麦<br /><b>＜塩＞</b>沖縄県産あら塩<br /><b>＜ドライフルーツやナッツ＞</b>すべてオーガニックのものを使用<br /><b>＜果物や野菜＞</b>自家栽培や地元のもの</p>
-      <h3>オーダー方法</h3>
-      <p>ページ下のお問い合わせフォームにてご注文を承ります。</p>
-      <p><b>おまかせセット&nbsp;&yen;2,000</b><br /><b>おまかせセット&nbsp;&yen;3,000</b><br /><b>おこのみオーダー&nbsp;1個〜</b><br />（送料別）</p>
-      <p>＜お支払い方法＞</p>
-      <p><b>銀行振込、または代金引換</b><br />振込手数料、代金引換手数料はお客様のご負担とさせていただきます。</p>
-    </div>
+  <section id="about" class="contents-wrapper">
+    <h2>山のパン屋について</h2>
+    <ul>
+      <li>
+        <h3>山のパン屋</h3>
+        <p>「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った<br />自然酵母＋国産小麦＋塩＋水のみで<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p>
+      </li>
+      <li>
+        <img src="http://static.tumblr.com/pqi9beo/E1Onxt2nb/9.png" />
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <img src="http://static.tumblr.com/pqi9beo/Q7pnxt2mu/1.png" />
+      </li>
+      <li>
+        <h3>自然酵母</h3>
+        <p>イースト菌や市販の天然酵母は使わず、麹から手づくりをしている酒種酵母や甘酒酵母、旬の果物酵母を使っています。米が主原料の甘酒酵母は麹を作り始めてから酵母ができるまで2週間、酒種酵母は1ヶ月半かかります。長い時間かけて作られた酵母、そして低温でゆっくり発酵させた酵母パンは時間が経つにつれ熟成され風味が変化していきます。</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>パンについて</h3>
+        <p>田舎パン、自家製あんこのあんパン、レーズン蒸しパン、フォッカッチャ、ワインブレッド、黒豆パン、酵母マフィン、全粒粉のコンプレ、その他季節の酵母パンやドライフルーツやナッツのパンなどを、季節に合わせて作っています。<br />バター、玉子、砂糖は原則使用していませんが、バターロールやクロワッサンはバターを使用、自家製あんこやピールに甜菜糖を使用しています。毎回、作るパンが異なりますので、詳細はお問い合わせください。</p>
+      </li>
+      <li>
+        <img src="http://static.tumblr.com/pqi9beo/JYVnxt2n5/5.png" />
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <img src="http://static.tumblr.com/pqi9beo/yElnxt2r8/4.png">
+      </li>
+      <li>
+        <h3>主な原材料</h3>
+        <p><b>＜酵母＞</b>自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母<br /><b>＜小麦粉＞</b>低農薬群馬県産小麦<br /><b>＜塩＞</b>沖縄県産あら塩<br /><b>＜ドライフルーツやナッツ＞</b>すべてオーガニックのものを使用<br /><b>＜果物や野菜＞</b>自家栽培や地元のもの</p>
+        <h3>オーダー方法</h3>
+        <p>ページ下のお問い合わせフォームにてご注文を承ります。</p>
+        <p><b>おまかせセット&nbsp;&yen;2,000</b><br /><b>おまかせセット&nbsp;&yen;3,000</b><br /><b>おこのみオーダー&nbsp;1個〜</b><br />（送料別）</p>
+        <p>＜お支払い方法＞</p>
+        <p><b>銀行振込、または代金引換</b><br />振込手数料、代金引換手数料はお客様のご負担とさせていただきます。</p>
+      </li>
+    </ul>
   </section>
   
-  <section>
-    <h2 id="contact">お問い合わせ</h2>
+  <section id="contact" class="contents-wrapper">
+    <h2>お問い合わせ</h2>
     <div id="contact-form-wrapper">
       <form action="https://docs.google.com/forms/d/1Gm9zPFYiLMWKUri99iinLOygmaLyDH2dC7GaqKotDEs/formResponse" method="POST" name="ss-form" id="ss-form" class="form-container" target="submit_iframe" onsubmit="return checkForm()">
         <iframe hidden name="submit_iframe" id="submit_iframe"></iframe>
@@ -133,13 +148,13 @@
   {block:SearchPage}-->{/block:SearchPage}
 
   {block:PermalinkPage}
-  <section class="panel mb130">
+  <section>
     {block:Posts}
     {block:Text}
     <section>
-      {block:Title}<h2 class="tag-name mb50">{Title}</h2>{/block:Title}
+      {block:Title}<h2>{Title}</h2>{/block:Title}
       {Body}
-      <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+      <footer>{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
     </section>
     {/block:Text}
 
@@ -147,7 +162,7 @@
     <section>
       {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
       {block:Caption}{Caption}{block:Caption}
-      <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+      <footer>{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
     </section>
     {/block:Photo}
     {/block:Posts}  
@@ -155,26 +170,26 @@
   {/block:PermalinkPage}
 
   {block:TagPage}
-  <section class="{TagsAsClasses} panel mb130">
-    <h2 class="tag-name mb50">&mdash;&nbsp;{Tag}&nbsp;&mdash;</h2>
-    <ol class="pl0">
+  <section class="{TagsAsClasses}">
+    <h2>&mdash;&nbsp;{Tag}&nbsp;&mdash;</h2>
+    <ol>
     {block:Posts}
       {block:Text}
-      <li class="ls-n mb130">
+      <li>
         <section>
-          {block:Title}<h3 class="title-tagged">{Title}</h3>{/block:Title}
+          {block:Title}<h3>{Title}</h3>{/block:Title}
           {Body}
-          <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+          <footer>{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
         </section>
       </li>
       {/block:Text}
 
       {block:Photo}
-      <li class="ls-n mb130">
+      <li>
         <section>
-          <a href="{PhotoURL-500}" class="boxer" title="{Caption}" data-gallery="gallery"><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>
+          <a href="{PhotoURL-500}" title="{Caption}" data-gallery="gallery"><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>
           {block:Caption}{Caption}{/block:Caption}
-          <footer class="post-date">{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+          <footer>{block:Date}{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
         </section>
       </li>
       {/block:Photo}
@@ -182,16 +197,15 @@
     </ol>
     
     {block:Pagination}
-    <footer class="pagination">
-      {block:PreviousPage}<a href="{PreviousPage}" class="page-linker page-previous" title="Previous">&larr;&nbsp;古い投稿</a>{/block:PreviousPage}
-      {block:NextPage}<a href="{NextPage}" class="page-linker page-next" title="Next">新しい投稿&nbsp;&rarr;</a>{/block:NextPage}
-      <span class="page-count">{CurrentPage}&nbsp;/&nbsp;{TotalPages}</span>
+    <footer>
+      {block:PreviousPage}<a href="{PreviousPage}" title="Previous">&larr;&nbsp;古い投稿</a>{/block:PreviousPage}
+      {block:NextPage}<a href="{NextPage}" title="Next">新しい投稿&nbsp;&rarr;</a>{/block:NextPage}
+      <span>{CurrentPage}&nbsp;/&nbsp;{TotalPages}</span>
     </footer>
     {/block:Pagination}
   </section>
   {/block:TagPage}
 
-  <div class="footer-element"></div>
   <footer role="contentinfo" class="cf">
     <ul>
       <li>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a></li>

@@ -1,0 +1,122 @@
+/* line 3, ../sass/partials/_03_structure.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/partials/_03_structure.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/partials/_03_structure.scss */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+/* line 21, ../sass/partials/_03_structure.scss */
+header {
+  display: block;
+  width: 100%;
+}
+/* line 24, ../sass/partials/_03_structure.scss */
+header h1 a {
+  position: absolute;
+  background: url() 0 0 no-repeat;
+}
+/* line 28, ../sass/partials/_03_structure.scss */
+header img {
+  width: 100%;
+  filter: brightness(95%);
+}
+
+/* line 34, ../sass/partials/_03_structure.scss */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 21px 0;
+  text-align: center;
+}
+/* line 39, ../sass/partials/_03_structure.scss */
+nav ol li {
+  margin-right: 21px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px transparent;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 45, ../sass/partials/_03_structure.scss */
+nav ol li:last-child {
+  margin: 0;
+}
+
+/* line 55, ../sass/partials/_03_structure.scss */
+.contents-wrapper {
+  max-width: 1024px;
+  position: relative;
+}
+
+/* line 60, ../sass/partials/_03_structure.scss */
+.link-button {
+  border-bottom: dashed 1px;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 63, ../sass/partials/_03_structure.scss */
+.link-button:hover {
+  border-color: #4aa2f2;
+  color: #4aa2f2;
+}
+
+/* line 69, ../sass/partials/_03_structure.scss */
+.page-previous {
+  position: absolute;
+  left: 400px;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 73, ../sass/partials/_03_structure.scss */
+.page-previous:hover {
+  color: #ba429b;
+}
+
+/* line 78, ../sass/partials/_03_structure.scss */
+.page-next {
+  position: absolute;
+  right: 400px;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 82, ../sass/partials/_03_structure.scss */
+.page-next:hover {
+  color: #ba429b;
+}
+
+/* line 87, ../sass/partials/_03_structure.scss */
+.cf {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 94, ../sass/partials/_03_structure.scss */
+.pie {
+  behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc");
+}
