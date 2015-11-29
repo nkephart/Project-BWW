@@ -16,27 +16,42 @@ body {
   background: #ffffff;
 }
 
+article {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 // Global header
 
 header {
-  display: block;
-  width: 100%;
-  h1 a {
-    position: absolute;
-    background: url() 0 0 no-repeat;
+  height: 118px;
+  max-width: 1024px;
+  margin: 0 auto 21px;
+  position: relative;
+  h1 {
+    visibility: hidden;
   }
-  img {
-    width: 100%;
-    filter: brightness(95%);
+  .header-logo {
+    display: block;
+    height: 118px;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
   }
 }
-
 nav {
   width: 100%;
-  margin: 0 auto;
-  padding: 21px 0;
-  text-align: center;
-  ol li {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  ol {
+    margin: 0;
+  }
+  li {
     margin-right: 21px;
     padding-bottom: 5px;
     border-bottom: solid 1px transparent;
@@ -52,9 +67,57 @@ nav {
 
 //
 
+#calendar {
+  width: 100%;
+  position: relative;
+  .calendar-bg {
+    width: 100%;
+    max-width: 2048px;
+    margin: 0 auto;
+    filter: brightness(95%);
+    z-index: 10;
+  }
+  .calendar-base {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 1024px;
+    margin: 0 auto;
+    z-index: 20;
+  }
+  .calendar-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+  }
+}
+
+//
+
+.panel {
+  width: 100%;
+}
+
+.panel-odd {
+  width: 100%;
+  padding: 21px 21px 34px;
+}
+
+.panel-even {
+  width: 100%;
+  padding: 21px 21px 34px;
+  background: #fafafa;
+}
+
 .contents-wrapper {
   max-width: 1024px;
-  position: relative;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
 }
 
 .link-button {

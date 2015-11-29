@@ -19,31 +19,49 @@ body {
   background: #ffffff;
 }
 
-/* line 21, ../sass/partials/_03_structure.scss */
-header {
-  display: block;
-  width: 100%;
-}
-/* line 24, ../sass/partials/_03_structure.scss */
-header h1 a {
-  position: absolute;
-  background: url() 0 0 no-repeat;
-}
-/* line 28, ../sass/partials/_03_structure.scss */
-header img {
-  width: 100%;
-  filter: brightness(95%);
+/* line 19, ../sass/partials/_03_structure.scss */
+article {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 34, ../sass/partials/_03_structure.scss */
+/* line 27, ../sass/partials/_03_structure.scss */
+header {
+  height: 118px;
+  max-width: 1024px;
+  margin: 0 auto 21px;
+  position: relative;
+}
+/* line 32, ../sass/partials/_03_structure.scss */
+header h1 {
+  visibility: hidden;
+}
+/* line 35, ../sass/partials/_03_structure.scss */
+header .header-logo {
+  display: block;
+  height: 118px;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
+}
+
+/* line 45, ../sass/partials/_03_structure.scss */
 nav {
   width: 100%;
-  margin: 0 auto;
-  padding: 21px 0;
-  text-align: center;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-/* line 39, ../sass/partials/_03_structure.scss */
-nav ol li {
+/* line 51, ../sass/partials/_03_structure.scss */
+nav ol {
+  margin: 0;
+}
+/* line 54, ../sass/partials/_03_structure.scss */
+nav li {
   margin-right: 21px;
   padding-bottom: 5px;
   border-bottom: solid 1px transparent;
@@ -57,18 +75,72 @@ nav ol li {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 45, ../sass/partials/_03_structure.scss */
-nav ol li:last-child {
+/* line 60, ../sass/partials/_03_structure.scss */
+nav li:last-child {
   margin: 0;
 }
 
-/* line 55, ../sass/partials/_03_structure.scss */
-.contents-wrapper {
-  max-width: 1024px;
+/* line 70, ../sass/partials/_03_structure.scss */
+#calendar {
+  width: 100%;
   position: relative;
 }
+/* line 73, ../sass/partials/_03_structure.scss */
+#calendar .calendar-bg {
+  width: 100%;
+  max-width: 2048px;
+  margin: 0 auto;
+  filter: brightness(95%);
+  z-index: 10;
+}
+/* line 80, ../sass/partials/_03_structure.scss */
+#calendar .calendar-base {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  z-index: 20;
+}
+/* line 90, ../sass/partials/_03_structure.scss */
+#calendar .calendar-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+}
 
-/* line 60, ../sass/partials/_03_structure.scss */
+/* line 100, ../sass/partials/_03_structure.scss */
+.panel {
+  width: 100%;
+}
+
+/* line 104, ../sass/partials/_03_structure.scss */
+.panel-odd {
+  width: 100%;
+  padding: 21px 21px 34px;
+}
+
+/* line 109, ../sass/partials/_03_structure.scss */
+.panel-even {
+  width: 100%;
+  padding: 21px 21px 34px;
+  background: #fafafa;
+}
+
+/* line 115, ../sass/partials/_03_structure.scss */
+.contents-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* line 118, ../sass/partials/_03_structure.scss */
+.contents-wrapper h2 {
+  text-align: center;
+}
+
+/* line 123, ../sass/partials/_03_structure.scss */
 .link-button {
   border-bottom: dashed 1px;
   -moz-transition: all 0.1s ease-in-out;
@@ -76,13 +148,13 @@ nav ol li:last-child {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 63, ../sass/partials/_03_structure.scss */
+/* line 126, ../sass/partials/_03_structure.scss */
 .link-button:hover {
   border-color: #4aa2f2;
   color: #4aa2f2;
 }
 
-/* line 69, ../sass/partials/_03_structure.scss */
+/* line 132, ../sass/partials/_03_structure.scss */
 .page-previous {
   position: absolute;
   left: 400px;
@@ -91,12 +163,12 @@ nav ol li:last-child {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 73, ../sass/partials/_03_structure.scss */
+/* line 136, ../sass/partials/_03_structure.scss */
 .page-previous:hover {
   color: #ba429b;
 }
 
-/* line 78, ../sass/partials/_03_structure.scss */
+/* line 141, ../sass/partials/_03_structure.scss */
 .page-next {
   position: absolute;
   right: 400px;
@@ -105,18 +177,18 @@ nav ol li:last-child {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 82, ../sass/partials/_03_structure.scss */
+/* line 145, ../sass/partials/_03_structure.scss */
 .page-next:hover {
   color: #ba429b;
 }
 
-/* line 87, ../sass/partials/_03_structure.scss */
+/* line 150, ../sass/partials/_03_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 94, ../sass/partials/_03_structure.scss */
+/* line 157, ../sass/partials/_03_structure.scss */
 .pie {
   behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc");
 }
