@@ -22,12 +22,21 @@ article {
   padding: 0;
 }
 
+a, form, li, p, span, table, ul, h4, h5, input, textarea {
+  color: #404040;
+}
+
+b {
+  color: #8b4513;
+}
+
 // Global header
 
 header {
-  height: 118px;
+  height: 131px;
   max-width: 1024px;
-  margin: 0 auto 21px;
+  margin: 0 auto;
+  padding-bottom: 16px;
   position: relative;
   h1 {
     visibility: hidden;
@@ -37,30 +46,32 @@ header {
     height: 118px;
     width: 180px;
     position: absolute;
-    top: 0;
+    bottom: 13px;
     left: 0;
     background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
   }
-}
-nav {
-  width: 100%;
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  ol {
-    margin: 0;
-  }
-  li {
-    margin-right: 21px;
-    padding-bottom: 5px;
-    border-bottom: solid 1px transparent;
-    @include inline-block;
-    @include transition(all 0.1s ease-in-out);
-    &:last-child {
+  nav {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    ol {
       margin: 0;
+      padding: 0;
     }
-    &:hover {
+    li {
+      margin-right: 21px;
+      padding-bottom: 8px;
+      border-bottom: solid 5px transparent;
+      @include inline-block;
+      @include transition(all 0.1s ease-in-out);
+      &:last-child {
+        margin: 0;
+      }
+      &:hover {
+        border-bottom: solid 5px #8b4513;
+      }
     }
   }
 }
@@ -97,10 +108,6 @@ nav {
 
 //
 
-.panel {
-  width: 100%;
-}
-
 .panel-odd {
   width: 100%;
   padding: 21px 21px 34px;
@@ -109,14 +116,109 @@ nav {
 .panel-even {
   width: 100%;
   padding: 21px 21px 34px;
-  background: #fafafa;
+  background: #fffaf0;
 }
 
 .contents-wrapper {
   max-width: 1024px;
   margin: 0 auto;
   h2 {
+    margin: 34px 0 51px;
     text-align: center;
+    color: #8b4513;
+  }
+  h3 {
+    margin: 0 0 21px;
+    text-align: center;
+    color: #8b4513;
+  }
+  ul {
+    width: 982px;
+    margin: 21px 21px 34px;
+    padding: 0;
+    li {
+      float: left;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none;      
+    }
+  }
+  p {
+    width: 100%;
+    line-height: 2.1em;
+  }
+  img {
+    width: 300px;
+    @include border-radius(1px);
+  }
+  .vertical-text {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    @include prefixed-property(writing-mode, vertical-rl);
+  }
+}
+
+#contact-table {
+  width: 982px;
+  margin: 21px 21px 0;
+  padding: 0;
+  .contact-td-l {
+    width: 50%;
+    margin: 0;
+    padding: 0 13px 13px 0;
+    text-align: right;
+  }
+  .contact-td-r {
+    width: 50%;
+    margin: 0;
+    padding: 0 0 13px 13px;
+    text-align: left;
+  }
+  input, textarea {
+    margin: 0;
+    padding: 5px 8px;
+    line-height: 1.615;
+    border: solid 1px #cdc0b0;
+    @include border-radius(1px);
+  }
+  #ss-submit {
+    margin-top: 13px;
+  }
+}
+
+.panel-footer {
+  width: 100%;
+  padding: 21px 21px 34px;
+  background: #8b4513;
+  nav {
+    width: 100%;
+    margin-bottom: 13px;
+    ol {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-right: 13px;
+      color: #ffffff;
+      @include inline-block;
+      &:last-child {
+        margin: 0;
+      }
+      &:hover {
+      }
+      a {
+        color: inherit;
+      }
+    }
+  }
+  span {
+    color: #ffffff;
+    a {
+      color: inherit;
+    }    
   }
 }
 
@@ -126,24 +228,6 @@ nav {
   &:hover {
     border-color: #4aa2f2;
     color: #4aa2f2;
-  }
-}
-
-.page-previous {
-  position: absolute;
-  left: 400px;
-  @include transition(all 0.1s ease-in-out);
-  &:hover {
-    color: #ba429b;
-  }
-}
-
-.page-next {
-  position: absolute;
-  right: 400px;
-  @include transition(all 0.1s ease-in-out);
-  &:hover {
-    color: #ba429b;
   }
 }
 

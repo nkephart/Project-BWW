@@ -1,3 +1,54 @@
+@charset "UTF-8";
+/* line 3, ../sass/partials/_02_typography.scss */
+h1, h1 a, h2, h2 a, h3, h3 a, input, textarea, button, a, form, li, p, span, table, ul, h4, h5 {
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.615;
+}
+
+/* line 13, ../sass/partials/_02_typography.scss */
+h1, h1 a, h2, h2 a, h3, h3 a, input, textarea, button {
+  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "times new roman", serif;
+}
+
+/* line 18, ../sass/partials/_02_typography.scss */
+a, form, li, p, span, table, ul, h4, h5 {
+  font-family: "arial", sans-serif;
+}
+
+/* line 23, ../sass/partials/_02_typography.scss */
+a, form, li, p, span, table, ul, h4, h5 {
+  font-size: 15px;
+}
+
+/* line 28, ../sass/partials/_02_typography.scss */
+h1, h1 a {
+  font-size: 21px;
+  visibility: hidden;
+}
+/* line 32, ../sass/partials/_02_typography.scss */
+h1 a {
+  visibility: visible;
+}
+
+/* line 38, ../sass/partials/_02_typography.scss */
+h2, h2 a {
+  font-size: 34px;
+}
+
+/* line 46, ../sass/partials/_02_typography.scss */
+h3, h3 a {
+  font-size: 21px;
+}
+
+/* line 54, ../sass/partials/_02_typography.scss */
+input, textarea, button {
+  font-size: 13px;
+}
+
 /* line 3, ../sass/partials/_03_structure.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -26,45 +77,56 @@ article {
   padding: 0;
 }
 
-/* line 27, ../sass/partials/_03_structure.scss */
+/* line 25, ../sass/partials/_03_structure.scss */
+a, form, li, p, span, table, ul, h4, h5, input, textarea {
+  color: #404040;
+}
+
+/* line 29, ../sass/partials/_03_structure.scss */
+b {
+  color: #8b4513;
+}
+
+/* line 35, ../sass/partials/_03_structure.scss */
 header {
-  height: 118px;
+  height: 131px;
   max-width: 1024px;
-  margin: 0 auto 21px;
+  margin: 0 auto;
+  padding-bottom: 16px;
   position: relative;
 }
-/* line 32, ../sass/partials/_03_structure.scss */
-header h1 {
+/* line 41, ../sass/partials/_03_structure.scss */
+header h1, header h1 a, h1 header a {
   visibility: hidden;
 }
-/* line 35, ../sass/partials/_03_structure.scss */
+/* line 44, ../sass/partials/_03_structure.scss */
 header .header-logo {
   display: block;
   height: 118px;
   width: 180px;
   position: absolute;
-  top: 0;
+  bottom: 13px;
   left: 0;
   background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
 }
-
-/* line 45, ../sass/partials/_03_structure.scss */
-nav {
+/* line 53, ../sass/partials/_03_structure.scss */
+header nav {
   width: 100%;
   text-align: right;
   position: absolute;
   bottom: 0;
   right: 0;
 }
-/* line 51, ../sass/partials/_03_structure.scss */
-nav ol {
+/* line 59, ../sass/partials/_03_structure.scss */
+header nav ol {
   margin: 0;
+  padding: 0;
 }
-/* line 54, ../sass/partials/_03_structure.scss */
-nav li {
+/* line 63, ../sass/partials/_03_structure.scss */
+header nav li {
   margin-right: 21px;
-  padding-bottom: 5px;
-  border-bottom: solid 1px transparent;
+  padding-bottom: 8px;
+  border-bottom: solid 5px transparent;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -75,17 +137,21 @@ nav li {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 60, ../sass/partials/_03_structure.scss */
-nav li:last-child {
+/* line 69, ../sass/partials/_03_structure.scss */
+header nav li:last-child {
   margin: 0;
 }
+/* line 72, ../sass/partials/_03_structure.scss */
+header nav li:hover {
+  border-bottom: solid 5px #8b4513;
+}
 
-/* line 70, ../sass/partials/_03_structure.scss */
+/* line 81, ../sass/partials/_03_structure.scss */
 #calendar {
   width: 100%;
   position: relative;
 }
-/* line 73, ../sass/partials/_03_structure.scss */
+/* line 84, ../sass/partials/_03_structure.scss */
 #calendar .calendar-bg {
   width: 100%;
   max-width: 2048px;
@@ -93,7 +159,7 @@ nav li:last-child {
   filter: brightness(95%);
   z-index: 10;
 }
-/* line 80, ../sass/partials/_03_structure.scss */
+/* line 91, ../sass/partials/_03_structure.scss */
 #calendar .calendar-base {
   position: absolute;
   top: 0;
@@ -104,7 +170,7 @@ nav li:last-child {
   margin: 0 auto;
   z-index: 20;
 }
-/* line 90, ../sass/partials/_03_structure.scss */
+/* line 101, ../sass/partials/_03_structure.scss */
 #calendar .calendar-img {
   position: absolute;
   top: 0;
@@ -112,35 +178,154 @@ nav li:last-child {
   z-index: 30;
 }
 
-/* line 100, ../sass/partials/_03_structure.scss */
-.panel {
-  width: 100%;
-}
-
-/* line 104, ../sass/partials/_03_structure.scss */
+/* line 111, ../sass/partials/_03_structure.scss */
 .panel-odd {
   width: 100%;
   padding: 21px 21px 34px;
 }
 
-/* line 109, ../sass/partials/_03_structure.scss */
+/* line 116, ../sass/partials/_03_structure.scss */
 .panel-even {
   width: 100%;
   padding: 21px 21px 34px;
-  background: #fafafa;
+  background: #fffaf0;
 }
 
-/* line 115, ../sass/partials/_03_structure.scss */
+/* line 122, ../sass/partials/_03_structure.scss */
 .contents-wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
-/* line 118, ../sass/partials/_03_structure.scss */
-.contents-wrapper h2 {
+/* line 125, ../sass/partials/_03_structure.scss */
+.contents-wrapper h2, .contents-wrapper h2 a, h2 .contents-wrapper a {
+  margin: 34px 0 51px;
   text-align: center;
+  color: #8b4513;
+}
+/* line 130, ../sass/partials/_03_structure.scss */
+.contents-wrapper h3, .contents-wrapper h3 a, h3 .contents-wrapper a {
+  margin: 0 0 21px;
+  text-align: center;
+  color: #8b4513;
+}
+/* line 135, ../sass/partials/_03_structure.scss */
+.contents-wrapper ul {
+  width: 982px;
+  margin: 21px 21px 34px;
+  padding: 0;
+}
+/* line 139, ../sass/partials/_03_structure.scss */
+.contents-wrapper ul li {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+/* line 148, ../sass/partials/_03_structure.scss */
+.contents-wrapper p {
+  width: 100%;
+  line-height: 2.1em;
+}
+/* line 152, ../sass/partials/_03_structure.scss */
+.contents-wrapper img {
+  width: 300px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+/* line 156, ../sass/partials/_03_structure.scss */
+.contents-wrapper .vertical-text {
+  width: auto;
+  margin: 0 auto;
+  text-align: left;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  -o-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 
-/* line 123, ../sass/partials/_03_structure.scss */
+/* line 164, ../sass/partials/_03_structure.scss */
+#contact-table {
+  width: 982px;
+  margin: 21px 21px 0;
+  padding: 0;
+}
+/* line 168, ../sass/partials/_03_structure.scss */
+#contact-table .contact-td-l {
+  width: 50%;
+  margin: 0;
+  padding: 0 13px 13px 0;
+  text-align: right;
+}
+/* line 174, ../sass/partials/_03_structure.scss */
+#contact-table .contact-td-r {
+  width: 50%;
+  margin: 0;
+  padding: 0 0 13px 13px;
+  text-align: left;
+}
+/* line 180, ../sass/partials/_03_structure.scss */
+#contact-table input, #contact-table textarea {
+  margin: 0;
+  padding: 5px 8px;
+  line-height: 1.615;
+  border: solid 1px #cdc0b0;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+/* line 187, ../sass/partials/_03_structure.scss */
+#contact-table #ss-submit {
+  margin-top: 13px;
+}
+
+/* line 192, ../sass/partials/_03_structure.scss */
+.panel-footer {
+  width: 100%;
+  padding: 21px 21px 34px;
+  background: #8b4513;
+}
+/* line 196, ../sass/partials/_03_structure.scss */
+.panel-footer nav {
+  width: 100%;
+  margin-bottom: 13px;
+}
+/* line 199, ../sass/partials/_03_structure.scss */
+.panel-footer nav ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 203, ../sass/partials/_03_structure.scss */
+.panel-footer nav li {
+  margin-right: 13px;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 207, ../sass/partials/_03_structure.scss */
+.panel-footer nav li:last-child {
+  margin: 0;
+}
+/* line 212, ../sass/partials/_03_structure.scss */
+.panel-footer nav li a {
+  color: inherit;
+}
+/* line 217, ../sass/partials/_03_structure.scss */
+.panel-footer span {
+  color: #ffffff;
+}
+/* line 219, ../sass/partials/_03_structure.scss */
+.panel-footer span a {
+  color: inherit;
+}
+
+/* line 225, ../sass/partials/_03_structure.scss */
 .link-button {
   border-bottom: dashed 1px;
   -moz-transition: all 0.1s ease-in-out;
@@ -148,47 +333,19 @@ nav li:last-child {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 126, ../sass/partials/_03_structure.scss */
+/* line 228, ../sass/partials/_03_structure.scss */
 .link-button:hover {
   border-color: #4aa2f2;
   color: #4aa2f2;
 }
 
-/* line 132, ../sass/partials/_03_structure.scss */
-.page-previous {
-  position: absolute;
-  left: 400px;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 136, ../sass/partials/_03_structure.scss */
-.page-previous:hover {
-  color: #ba429b;
-}
-
-/* line 141, ../sass/partials/_03_structure.scss */
-.page-next {
-  position: absolute;
-  right: 400px;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/* line 145, ../sass/partials/_03_structure.scss */
-.page-next:hover {
-  color: #ba429b;
-}
-
-/* line 150, ../sass/partials/_03_structure.scss */
+/* line 234, ../sass/partials/_03_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 157, ../sass/partials/_03_structure.scss */
+/* line 241, ../sass/partials/_03_structure.scss */
 .pie {
   behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc");
 }

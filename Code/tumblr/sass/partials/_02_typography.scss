@@ -21,7 +21,7 @@
 }
 
 a, form, li, p, span, table, ul, h4, h5 {
-  @extend %text-serif;
+  @extend %text-sans-serif;
   font-size: 15px;
 }
 
@@ -35,44 +35,23 @@ h1 {
   }
 }
 
-h2, h3 {
+h2 {
   @extend %text-serif;
-  font-size: 21px;
+  font-size: 34px;
   a {
     @extend h2;
   }
 }
 
-h4, h5 {
+h3 {
   @extend %text-serif;
-  font-size: 15px;
+  font-size: 21px;
   a {
-    @extend h4;
+    @extend h3;
   }
 }
 
-.font-small {
+input, textarea, button {
+  @extend %text-serif;
   font-size: 13px;
-}
-
-.font-italic {
-  font-style: italic;
-}
-
-.nav-panel-link {
-  font-size: 18px;
-}
-
-.glass-panel-table3 {
-  th, td {
-    font-size: 13px;
-    font-weight: 400;
-  }
-}
-
-footer p {
-  font-size: 13px;
-  a {
-    font-size: inherit;
-  }
 }

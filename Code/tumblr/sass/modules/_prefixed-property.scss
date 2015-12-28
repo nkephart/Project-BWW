@@ -1,0 +1,14 @@
+// Module for adding vender prefix to properties
+
+$use-prefix-webkit: true;
+$use-prefix-moz: true;
+$use-prefix-ms: true;
+$use-prefix-o: true;
+
+@mixin prefixed-property($property, $property-value) {
+  @if $use-prefix-webkit {-webkit-#{$property}:#{$property-value}; }
+  @if $use-prefix-moz {-moz-#{$property}:#{$property-value}; }
+  @if $use-prefix-ms {-ms-#{$property}:#{$property-value}; }
+  @if $use-prefix-o {-o-#{$property}:#{$property-value}; }
+  #{$property}:#{$property-value};
+}
