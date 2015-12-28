@@ -67,9 +67,15 @@
   {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
-  <section id="news">
+  <section class="news-panel">
+    <div class="contents-wrapper">
+      <ol id="news-contents">
+        <li>読み込み中&hellip;</li>
+        <li>XXX</li>
+        <li>XXX</li>
+      </ol>
+    </div>
   </section>
-  
   <a id="about"></a>
   <section class="panel-odd">
     <div class="contents-wrapper">
@@ -110,11 +116,11 @@
         <li><img src="http://static.tumblr.com/pqi9beo/yElnxt2r8/4.png"></li>
         <li>
           <h3>主な原材料</h3>
-          <p><b>＜酵母＞</b><br />自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母</p>
-          <p><b>＜小麦粉＞</b><br />低農薬群馬県産小麦</p>
-          <p><b>＜塩＞</b><br />沖縄県産あら塩</p>
-          <p><b>＜ドライフルーツやナッツ＞</b><br />すべてオーガニックのものを使用</p>
-          <p><b>＜果物や野菜＞</b><br />自家栽培や地元のもの</p>
+          <p>＜酵母＞<br />自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母</p>
+          <p>＜小麦粉＞<br />低農薬群馬県産小麦</p>
+          <p>＜塩＞<br />沖縄県産あら塩</p>
+          <p>＜ドライフルーツやナッツ＞<br />すべてオーガニックのものを使用</p>
+          <p>＜果物や野菜＞<br />自家栽培や地元のもの</p>
         </li>
       </ul>
     </div>
@@ -159,7 +165,7 @@
               <tr>
                 <td class="contact-td-l"></td>
                 <td class="contact-td-r">
-                  <span>内容をご確認の上、「送信」ボタンをクリックしてください</span>
+                  <span>内容をご確認の上、「送信」ボタンをクリックしてください。</span>
                   <section>
                     <input type="hidden" name="draftResponse" value="[,,&quot;-2919550254214947495&quot;]">
                     <input type="hidden" name="pageHistory" value="0">

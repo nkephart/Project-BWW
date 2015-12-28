@@ -23,7 +23,7 @@ article {
 }
 
 a, form, li, p, span, table, ul, h4, h5, input, textarea {
-  color: #404040;
+  color: $color-text;
 }
 
 b {
@@ -70,7 +70,7 @@ header {
         margin: 0;
       }
       &:hover {
-        border-bottom: solid 5px #8b4513;
+        border-bottom: solid 5px $color-highlight;
       }
     }
   }
@@ -125,12 +125,12 @@ header {
   h2 {
     margin: 34px 0 51px;
     text-align: center;
-    color: #8b4513;
+    color: $color-highlight;
   }
   h3 {
     margin: 0 0 21px;
     text-align: center;
-    color: #8b4513;
+    color: $color-highlight;
   }
   ul {
     width: 982px;
@@ -158,6 +158,18 @@ header {
     margin: 0 auto;
     text-align: left;
     @include prefixed-property(writing-mode, vertical-rl);
+  }
+}
+
+.news-panel {
+  width: 100%;
+  padding: 21px 21px 34px;
+  ol {
+    width: 982px;
+    margin: 21px 21px 34px;
+    padding: 0;
+    li {
+    }
   }
 }
 
@@ -192,7 +204,7 @@ header {
 .panel-footer {
   width: 100%;
   padding: 21px 21px 34px;
-  background: #8b4513;
+  background: $color-highlight;
   nav {
     width: 100%;
     margin-bottom: 13px;

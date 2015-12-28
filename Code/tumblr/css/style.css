@@ -144,14 +144,15 @@ header nav li:last-child {
 /* line 72, ../sass/partials/_03_structure.scss */
 header nav li:hover {
   border-bottom: solid 5px #8b4513;
+  color: #8b4513;
 }
 
-/* line 81, ../sass/partials/_03_structure.scss */
+/* line 82, ../sass/partials/_03_structure.scss */
 #calendar {
   width: 100%;
   position: relative;
 }
-/* line 84, ../sass/partials/_03_structure.scss */
+/* line 85, ../sass/partials/_03_structure.scss */
 #calendar .calendar-bg {
   width: 100%;
   max-width: 2048px;
@@ -159,7 +160,7 @@ header nav li:hover {
   filter: brightness(95%);
   z-index: 10;
 }
-/* line 91, ../sass/partials/_03_structure.scss */
+/* line 92, ../sass/partials/_03_structure.scss */
 #calendar .calendar-base {
   position: absolute;
   top: 0;
@@ -170,7 +171,7 @@ header nav li:hover {
   margin: 0 auto;
   z-index: 20;
 }
-/* line 101, ../sass/partials/_03_structure.scss */
+/* line 102, ../sass/partials/_03_structure.scss */
 #calendar .calendar-img {
   position: absolute;
   top: 0;
@@ -178,43 +179,43 @@ header nav li:hover {
   z-index: 30;
 }
 
-/* line 111, ../sass/partials/_03_structure.scss */
+/* line 112, ../sass/partials/_03_structure.scss */
 .panel-odd {
   width: 100%;
   padding: 21px 21px 34px;
 }
 
-/* line 116, ../sass/partials/_03_structure.scss */
+/* line 117, ../sass/partials/_03_structure.scss */
 .panel-even {
   width: 100%;
   padding: 21px 21px 34px;
   background: #fffaf0;
 }
 
-/* line 122, ../sass/partials/_03_structure.scss */
+/* line 123, ../sass/partials/_03_structure.scss */
 .contents-wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
-/* line 125, ../sass/partials/_03_structure.scss */
+/* line 126, ../sass/partials/_03_structure.scss */
 .contents-wrapper h2, .contents-wrapper h2 a, h2 .contents-wrapper a {
   margin: 34px 0 51px;
   text-align: center;
   color: #8b4513;
 }
-/* line 130, ../sass/partials/_03_structure.scss */
+/* line 131, ../sass/partials/_03_structure.scss */
 .contents-wrapper h3, .contents-wrapper h3 a, h3 .contents-wrapper a {
   margin: 0 0 21px;
   text-align: center;
   color: #8b4513;
 }
-/* line 135, ../sass/partials/_03_structure.scss */
+/* line 136, ../sass/partials/_03_structure.scss */
 .contents-wrapper ul {
   width: 982px;
   margin: 21px 21px 34px;
   padding: 0;
 }
-/* line 139, ../sass/partials/_03_structure.scss */
+/* line 140, ../sass/partials/_03_structure.scss */
 .contents-wrapper ul li {
   float: left;
   width: 50%;
@@ -223,19 +224,19 @@ header nav li:hover {
   text-align: center;
   list-style: none;
 }
-/* line 148, ../sass/partials/_03_structure.scss */
+/* line 149, ../sass/partials/_03_structure.scss */
 .contents-wrapper p {
   width: 100%;
   line-height: 2.1em;
 }
-/* line 152, ../sass/partials/_03_structure.scss */
+/* line 153, ../sass/partials/_03_structure.scss */
 .contents-wrapper img {
   width: 300px;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 156, ../sass/partials/_03_structure.scss */
+/* line 157, ../sass/partials/_03_structure.scss */
 .contents-wrapper .vertical-text {
   width: auto;
   margin: 0 auto;
@@ -247,27 +248,39 @@ header nav li:hover {
   writing-mode: vertical-rl;
 }
 
-/* line 164, ../sass/partials/_03_structure.scss */
+/* line 165, ../sass/partials/_03_structure.scss */
+.news-panel {
+  width: 100%;
+  padding: 21px 21px 34px;
+}
+/* line 168, ../sass/partials/_03_structure.scss */
+.news-panel ol {
+  width: 982px;
+  margin: 21px 21px 34px;
+  padding: 0;
+}
+
+/* line 177, ../sass/partials/_03_structure.scss */
 #contact-table {
   width: 982px;
   margin: 21px 21px 0;
   padding: 0;
 }
-/* line 168, ../sass/partials/_03_structure.scss */
+/* line 181, ../sass/partials/_03_structure.scss */
 #contact-table .contact-td-l {
   width: 50%;
   margin: 0;
   padding: 0 13px 13px 0;
   text-align: right;
 }
-/* line 174, ../sass/partials/_03_structure.scss */
+/* line 187, ../sass/partials/_03_structure.scss */
 #contact-table .contact-td-r {
   width: 50%;
   margin: 0;
   padding: 0 0 13px 13px;
   text-align: left;
 }
-/* line 180, ../sass/partials/_03_structure.scss */
+/* line 193, ../sass/partials/_03_structure.scss */
 #contact-table input, #contact-table textarea {
   margin: 0;
   padding: 5px 8px;
@@ -277,28 +290,28 @@ header nav li:hover {
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 187, ../sass/partials/_03_structure.scss */
+/* line 200, ../sass/partials/_03_structure.scss */
 #contact-table #ss-submit {
   margin-top: 13px;
 }
 
-/* line 192, ../sass/partials/_03_structure.scss */
+/* line 205, ../sass/partials/_03_structure.scss */
 .panel-footer {
   width: 100%;
   padding: 21px 21px 34px;
   background: #8b4513;
 }
-/* line 196, ../sass/partials/_03_structure.scss */
+/* line 209, ../sass/partials/_03_structure.scss */
 .panel-footer nav {
   width: 100%;
   margin-bottom: 13px;
 }
-/* line 199, ../sass/partials/_03_structure.scss */
+/* line 212, ../sass/partials/_03_structure.scss */
 .panel-footer nav ol {
   margin: 0;
   padding: 0;
 }
-/* line 203, ../sass/partials/_03_structure.scss */
+/* line 216, ../sass/partials/_03_structure.scss */
 .panel-footer nav li {
   margin-right: 13px;
   color: #ffffff;
@@ -308,24 +321,24 @@ header nav li:hover {
   *zoom: 1;
   *display: inline;
 }
-/* line 207, ../sass/partials/_03_structure.scss */
+/* line 220, ../sass/partials/_03_structure.scss */
 .panel-footer nav li:last-child {
   margin: 0;
 }
-/* line 212, ../sass/partials/_03_structure.scss */
+/* line 225, ../sass/partials/_03_structure.scss */
 .panel-footer nav li a {
   color: inherit;
 }
-/* line 217, ../sass/partials/_03_structure.scss */
+/* line 230, ../sass/partials/_03_structure.scss */
 .panel-footer span {
   color: #ffffff;
 }
-/* line 219, ../sass/partials/_03_structure.scss */
+/* line 232, ../sass/partials/_03_structure.scss */
 .panel-footer span a {
   color: inherit;
 }
 
-/* line 225, ../sass/partials/_03_structure.scss */
+/* line 238, ../sass/partials/_03_structure.scss */
 .link-button {
   border-bottom: dashed 1px;
   -moz-transition: all 0.1s ease-in-out;
@@ -333,19 +346,19 @@ header nav li:hover {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 228, ../sass/partials/_03_structure.scss */
+/* line 241, ../sass/partials/_03_structure.scss */
 .link-button:hover {
   border-color: #4aa2f2;
   color: #4aa2f2;
 }
 
-/* line 234, ../sass/partials/_03_structure.scss */
+/* line 247, ../sass/partials/_03_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 241, ../sass/partials/_03_structure.scss */
+/* line 254, ../sass/partials/_03_structure.scss */
 .pie {
   behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc");
 }
