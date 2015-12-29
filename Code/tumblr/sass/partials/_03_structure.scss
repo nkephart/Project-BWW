@@ -26,87 +26,104 @@ a, form, li, p, span, table, ul, h4, h5, input, textarea {
   color: $color-text;
 }
 
-b {
-  color: #8b4513;
+a {
+  padding: 5px 0;
+  &:hover {
+    color: $color-highlight;
+  }
 }
 
-// Global header
+b {
+  color: $color-highlight;
+}
+
+// Global header contents
 
 header {
-  height: 131px;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-bottom: 16px;
+  width: 100%;
+}
+
+.header-wrapper {
   position: relative;
-  h1 {
-    visibility: hidden;
+  width: 100%;  
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
   }
-  .header-logo {
+  h1 {
     display: block;
     height: 118px;
     width: 180px;
     position: absolute;
-    bottom: 13px;
-    left: 0;
-    background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
+    top: 50%;
+    left: 50%;
+    margin: -59px 0 0 -90px;
+    a {
+      background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
+    }
   }
+}
+
+.nav-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
   nav {
     width: 100%;
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin: 0 21px 21px;
+    text-align: center;
     ol {
       margin: 0;
       padding: 0;
     }
     li {
-      margin-right: 21px;
-      padding-bottom: 8px;
-      border-bottom: solid 5px transparent;
+      margin-right: 34px;
+      padding-top: 16px;
+      border-top: solid 5px transparent;
       @include inline-block;
       @include transition(all 0.1s ease-in-out);
       &:last-child {
         margin: 0;
       }
       &:hover {
-        border-bottom: solid 5px $color-highlight;
+        border-top: solid 5px $color-highlight;
       }
     }
   }
 }
 
-//
+// Notification section contents
 
-#calendar {
-  width: 100%;
-  position: relative;
-  .calendar-bg {
-    width: 100%;
-    max-width: 2048px;
-    margin: 0 auto;
-    filter: brightness(95%);
-    z-index: 10;
+.panel-cal {
+  background: #fafafa;
+}
+
+.calendar-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 21px 21px 34px;
+  h3 {
+    margin: 13px 0 21px;
+    text-align: left;
+    color: $color-highlight;
   }
-  .calendar-base {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 1024px;
-    margin: 0 auto;
-    z-index: 20;
+  .calendar-div {
+    float: left;
+    width: 66%;
   }
-  .calendar-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 30;
+  .notify-div {
+    width: 33%;
+    ol {
+      width: 100%;
+      padding: 0;
+      li {
+        list-style: none;      
+      }
+    }
   }
 }
 
-//
+// Index page contents
 
 .panel-odd {
   width: 100%;
@@ -161,17 +178,7 @@ header {
   }
 }
 
-.news-panel {
-  width: 100%;
-  padding: 21px 21px 34px;
-  ol {
-    width: 982px;
-    margin: 21px 21px 34px;
-    padding: 0;
-    li {
-    }
-  }
-}
+// Contact section
 
 #contact-table {
   width: 982px;
@@ -198,8 +205,16 @@ header {
   }
   #ss-submit {
     margin-top: 13px;
+    padding: 3px 13px;
+    color: #ffffff;
+    background: $color-highlight;
+    border: solid 1px #cdc0b0;
+    @include border-radius(3px);
+
   }
 }
+
+// Global footer
 
 .panel-footer {
   width: 100%;
@@ -231,15 +246,6 @@ header {
     a {
       color: inherit;
     }    
-  }
-}
-
-.link-button {
-  border-bottom: dashed 1px;
-  @include transition(all 0.1s ease-in-out);
-  &:hover {
-    border-color: #4aa2f2;
-    color: #4aa2f2;
   }
 }
 

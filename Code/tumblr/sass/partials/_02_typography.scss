@@ -51,7 +51,12 @@ h3 {
   }
 }
 
-input, textarea, button {
+input, textarea {
   @extend %text-serif;
+  font-size: 13px;
+}
+
+button {
+  @extend %text-sans-serif;
   font-size: 13px;
 }

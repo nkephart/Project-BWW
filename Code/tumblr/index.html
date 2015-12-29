@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2015.12.28 / Ver 0.3
+  Last updated 2015.12.29 / Ver 0.4
 -->
 <html>
 <head>
@@ -35,7 +35,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
 <!-- CSS files -->
 <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/zsanxt7ib/normalize.css">
-<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/KWto02fi3/style.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/D02o040le/style.css">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -46,34 +46,37 @@
 <a id="top-ancher"></a>
 <article role="main">
   <header role="banner">
-    <h1>山のパン屋</h1>
-    <a class="header-logo" href="{BlogURL}"></a>
-    <nav role="navigation">
-      <ol>
-        <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li>
-        <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
-        <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
-        {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
-        <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
-      </ol>
-    </nav>
-  </header>
-  <div id="calendar">
-    <img class="calendar-bg" src="{HeaderImage}" />
-    <div class="calendar-base"></div>
-    <div class="calendar-img"></div>
-  </div>
-  
+    <div class="header-wrapper">
+      <img class="header-img" src="{HeaderImage}" />
+      <h1><a href="{BlogURL}" title="{BlogTitle}"></a></h1>
+    </div>
+    <div class="nav-wrapper">
+      <nav role="navigation">
+        <ol>
+          <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li>
+          <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
+          <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
+          {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+          <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>    
   {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
-  <section class="news-panel">
-    <div class="contents-wrapper">
-      <ol id="news-contents">
-        <li>読み込み中&hellip;</li>
-        <li>XXX</li>
-        <li>XXX</li>
-      </ol>
+  <section class="panel-cal">
+    <div class="calendar-wrapper">
+      <div class="calendar-div">Calendar</div>
+      <div class="notify-div cf">
+        <h3>最新のお知らせ</h3>
+        <p>当店では毎週XXXにXXXをXXXしています。イベントへの出店情報、ご注文いただいたパンの発送日程はカレンダーに記載の情報をご覧ください。そのほかの最新のお知らせや新メニューのご紹介は、下の欄をご覧ください。</p>
+        <ol id="news-contents">
+          <li>2015/12/27&nbsp;&nbsp;&nbsp;読み込み中&hellip;</li>
+          <li>2015/12/26&nbsp;&nbsp;&nbsp;XXX</li>
+          <li>2015/12/25&nbsp;&nbsp;&nbsp;XXX</li>
+        </ol>
+      </div>
     </div>
   </section>
   <a id="about"></a>
