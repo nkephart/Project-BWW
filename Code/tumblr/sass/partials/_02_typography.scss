@@ -3,7 +3,6 @@
 %text-base {
   font-weight: 400; 
   font-style: normal;
-  color: black;
   text-decoration: none;
   text-rendering: optimizeLegibility;
   line-height: 1.615;
@@ -59,4 +58,13 @@ input, textarea {
 button {
   @extend %text-sans-serif;
   font-size: 13px;
+}
+
+.pagination ul li {
+  @extend %text-serif;
+//  font-size: 13px;
+  a {
+    @extend %text-serif;
+    font-size: inherit;
+  }
 }

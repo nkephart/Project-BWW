@@ -2,6 +2,8 @@
 
 $color-text: #404040;
 $color-highlight: #8b4513;
+$color-border: #faebd7;
+$color-background: #fffaf0;
 
 // Typography variables
 
@@ -9,6 +11,10 @@ $font-size-title: 8.9rem;
 $font-size-heading: 3.4rem;
 $font-size-body: 1.3rem;
 
-// Settings
+// Sizing variables
 
-$width-contents: 900px;
+$width-contents: 987px;
+$width-inner-contents: 610px;
+$width-menutag-contents: ($width-contents - (21 * 6)) / 3;
+$width-image: $width-contents / 3;
+$width-menutag-image: $width-menutag-contents - (21 * 2);
