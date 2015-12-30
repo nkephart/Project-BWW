@@ -56,14 +56,14 @@ header {
   }
   h1 {
     display: block;
-    height: 118px;
-    width: 180px;
+    height: 200px;
+    width: 240px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -59px 0 0 -90px;
+    margin: -100px 0 0 -120px;
     a {
-      background: url("http://static.tumblr.com/pqi9beo/lZ8nykfoz/header-logo.png") 0 0 no-repeat;
+      background: url("http://static.tumblr.com/pqi9beo/1kYo04s9n/header-logo_white.png") 0 0 no-repeat;
     }
   }
 }
@@ -102,24 +102,30 @@ header {
   width: 100%;
   min-width: $width-contents;
   background: #fafafa;
+  border-bottom: solid 1px $color-border;
 }
 
 .info-wrapper {
   width: $width-contents;
   margin: 0 auto;
-  padding: 21px;
-  h3 {
-    margin: 0 0 21px;
-    text-align: left;
-    color: $color-highlight;
-  }
+  padding: 21px 0;
   .calendar-wrapper {
     float: left;
-    width: 60%;
-    padding-right: 21px;
+    width: 50%;
+    padding-left: 21px;
+    img {
+      width: 80%;
+    }
   }
   .news-wrapper {
-    width: 40%;
+    float: left;
+    width: 50%;
+    padding-left: 21px;
+    h3 {
+      margin: 0 0 21px;
+      text-align: left;
+      color: $color-highlight;
+    }
     ol {
       width: 100%;
       padding: 0;
@@ -178,10 +184,12 @@ header {
     @include border-radius(1px);
   }
   .vertical-text {
+    display: inline;
     width: auto;
     margin: 0 auto;
     text-align: left;
     @include prefixed-property(writing-mode, vertical-rl);
+    -ms-writing-mode: tb-rl;
   }
 }
 
@@ -191,6 +199,7 @@ header {
   width: 100%;
   min-width: $width-contents;
   background: #fafafa;
+  border-top: solid 1px $color-border;
 }
 
 #contact-table {
@@ -230,7 +239,7 @@ header {
 .panel-permalink, .panel-tagged {
   width: 100%;
   min-width: $width-contents;
-  padding: 21px;
+  padding: 21px 0;
   background: $color-background;
   h2 {
     margin: 13px 0 34px;

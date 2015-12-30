@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
      ___       ___       ___       ___       ___       ___   
     /\  \     /\__\     /\  \     /\  \     /\  \     /\  \  
@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2015.12.29 / Ver 0.5
+  Last updated 2015.12.30 / Ver 0.6
 -->
 <html>
 <head>
@@ -28,6 +28,7 @@
 <meta property="og:description" content="{MetaDescription}">
 <!-- Tumblr settings -->
 <meta name="image:Header" content="{HeaderImage}">
+<meta name="image:Calendar">
 <!-- General settings -->
 <title>{block:SearchPage}Search results for: {SearchQuery} | {/block:SearchPage}{block:PostTitle}{PostTitle} | {/block:PostTitle}{Title}</title>
 <link rel="shortcut icon" href="{Favicon}">
@@ -35,7 +36,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
 <!-- CSS files -->
 <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/zsanxt7ib/normalize.css">
-<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/dxuo04pc1/style.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/eSko04vmp/style.css">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -47,7 +48,7 @@
 <article role="main">
   <header role="banner">
     <div class="header-wrapper">
-      <img class="header-img" src="{HeaderImage}" />
+      <img src="{HeaderImage}" />
       <h1><a href="{BlogURL}" title="{BlogTitle}"></a></h1>
     </div>
     <div class="nav-wrapper">
@@ -66,14 +67,16 @@
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
   <section class="panel-info">
-    <div class="info-wrapper">
-      <div class="calendar-wrapper">Calendar</div>
-      <div class="news-wrapper cf">
+    <div class="info-wrapper cf">
+      <div class="calendar-wrapper">
+        <img src="{image:Calendar}" />
+      </div>
+      <div class="news-wrapper">
         <h3>最新のお知らせ</h3>
         <p>当店では毎週XXXにXXXをXXXしています。イベントへの出店情報、ご注文いただいたパンの発送日程はカレンダーに記載の情報をご覧ください。そのほかの最新のお知らせや新メニューのご紹介は、下の欄をご覧ください。</p>
         <ol id="news-contents">
-          <li>&bull;&nbsp;2015/12/27&nbsp;&nbsp;&nbsp;読み込み中&hellip;</li>
-          <li>&bull;&nbsp;2015/12/26&nbsp;&nbsp;&nbsp;XXX</li>
+          <li>&mdash;&nbsp;2015/12/27&nbsp;&nbsp;&nbsp;読み込み中&hellip;</li>
+          <li>&minus;&nbsp;2015/12/26&nbsp;&nbsp;&nbsp;XXX</li>
           <li>&bull;&nbsp;2015/12/25&nbsp;&nbsp;&nbsp;XXX</li>
         </ol>
       </div>
