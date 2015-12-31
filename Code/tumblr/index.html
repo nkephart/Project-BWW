@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2015.12.30 / Ver 0.6
+  Last updated 2015.12.31 / Ver 0.7
 -->
 <html>
 <head>
@@ -36,7 +36,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
 <!-- CSS files -->
 <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/zsanxt7ib/normalize.css">
-<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/eSko04vmp/style.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/5Doo089bj/style.css">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -49,7 +49,8 @@
   <header role="banner">
     <div class="header-wrapper">
       <img src="{HeaderImage}" />
-      <h1><a href="{BlogURL}" title="{BlogTitle}"></a></h1>
+      <h1 class="header-logo"><a href="{BlogURL}" title="{BlogTitle}"></a></h1>
+      <a href="http://www.facebook.com/yamanopanya" title="フェイスブック" class="header-fb"></a>
     </div>
     <div class="nav-wrapper">
       <nav role="navigation">
@@ -75,9 +76,9 @@
         <h3>最新のお知らせ</h3>
         <p>当店では毎週XXXにXXXをXXXしています。イベントへの出店情報、ご注文いただいたパンの発送日程はカレンダーに記載の情報をご覧ください。そのほかの最新のお知らせや新メニューのご紹介は、下の欄をご覧ください。</p>
         <ol id="news-contents">
-          <li>&mdash;&nbsp;2015/12/27&nbsp;&nbsp;&nbsp;読み込み中&hellip;</li>
+          <li>&minus;&nbsp;2015/12/27&nbsp;&nbsp;&nbsp;読み込み中&hellip;</li>
           <li>&minus;&nbsp;2015/12/26&nbsp;&nbsp;&nbsp;XXX</li>
-          <li>&bull;&nbsp;2015/12/25&nbsp;&nbsp;&nbsp;XXX</li>
+          <li>&minus;&nbsp;2015/12/25&nbsp;&nbsp;&nbsp;XXX</li>
         </ol>
       </div>
     </div>
@@ -88,7 +89,7 @@
     <div class="contents-wrapper">
       <h2>山のパン屋について</h2>
       <ul class="cf">
-        <li><p class="vertical-text">「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った<br />自然酵母＋国産小麦＋塩＋水のみで<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p></li>
+        <li><p class="vertical-text">「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った自然酵母と<br />国産小麦＋塩＋水で<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p></li>
         <li><img src="http://static.tumblr.com/pqi9beo/E1Onxt2nb/9.png" />
         </li>
       </ul>
@@ -126,11 +127,9 @@
         <li><img src="http://static.tumblr.com/pqi9beo/yElnxt2r8/4.png"></li>
         <li>
           <h3>主な原材料</h3>
-          <p>＜酵母＞<br />自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母</p>
-          <p>＜小麦粉＞<br />低農薬群馬県産小麦</p>
-          <p>＜塩＞<br />沖縄県産あら塩</p>
-          <p>＜ドライフルーツやナッツ＞<br />すべてオーガニックのものを使用</p>
-          <p>＜果物や野菜＞<br />自家栽培や地元のもの</p>
+          <p class="align-l"><span class="highlight">＜酵母＞</span>&nbsp;自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母<br /><span class="highlight">＜小麦粉＞</span>&nbsp;低農薬群馬県産小麦<br /><span class="highlight">＜塩＞</span>&nbsp;沖縄県産あら塩<br /><span class="highlight">＜ドライフルーツやナッツ＞</span>&nbsp;すべてオーガニックのものを使用<br /><span class="highlight">＜果物や野菜＞</span>&nbsp;自家栽培や地元のもの</p>
+          <h3>温め方</h3>
+          <p class="align-l">米が主原料の自然酵母パンは時間が経つと固くなります。<br />フライパンに蓋をして蒸し焼きにしますと元の柔らかさが戻ります。<br />蒸をして温めますとモチモチな食感になります。</p>
         </li>
       </ul>
     </div>
@@ -142,8 +141,9 @@
         <li>
           <h3>オーダー方法</h3>
           <p><a href="#contact">お問い合わせフォーム</a>にてご注文を承ります。</p>
-          <p><b>おまかせセット&nbsp;&yen;2,000</b><br /><b>おまかせセット&nbsp;&yen;3,000</b><br /><b>おこのみオーダー&nbsp;1個〜</b><br />（送料、振込手数料別）</p>
-          <p>＜お支払い方法＞<br /><b>銀行振込、または代金引換</b><br />振込手数料、代金引換手数料は<br />お客様のご負担とさせていただきます。</p>
+          <p><span class="highlight">おまかせセット&nbsp;&nbsp;&nbsp;&yen;2,000&nbsp;/&nbsp;&yen;3,000<br />おこのみオーダー&nbsp;&nbsp;&nbsp;1個〜</span><br />送料、振込手数料別</p>
+          <p><span class="highlight">＜お支払い方法＞<br />銀行振込、または代金引換</span><br />振込手数料、代金引換手数料は<br />お客様のご負担とさせていただきます。</p>
+          <p><span class="highlight">＜焼成日＞<br />月曜日、木曜日、他</span><br />季節により変動あり</p>
         </li>
         <li><img src="http://static.tumblr.com/pqi9beo/JYVnxt2n5/5.png" /></li>
       </ul>
@@ -279,7 +279,7 @@
     <div class="footer-wrapper">
       <nav role="navigation">
         <ol>
-          <li><a href="{BlogURL}" title="トップページに戻る">トップページ</a></li><li>|</li>
+          <li><a href="{BlogURL}" title="トップページ">トップページ</a></li><li>|</li>
           <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li><li>|</li>
           <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li><li>|</li>
           <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li><li>|</li>
@@ -287,7 +287,9 @@
           <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
         </ol>
       </nav>
+      <span><a href="http://www.facebook.com/yamanopanya" title="フェイスブック" class="footer-fb">フェイスブック</a></span>
       <span>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a>, all rights reserved.</span>
+      <div class="footer-logo"></div>
     </div>
   </footer>
 </article>

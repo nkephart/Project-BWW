@@ -66,6 +66,15 @@ header {
       background: url("http://static.tumblr.com/pqi9beo/1kYo04s9n/header-logo_white.png") 0 0 no-repeat;
     }
   }
+  .header-fb {
+    display: block;
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    bottom: 21px;
+    right: 21px;
+    background: url("http://static.tumblr.com/pqi9beo/H7ho088uu/fb-logo.png") 0 0 no-repeat;
+  }
 }
 
 .nav-wrapper {
@@ -339,9 +348,10 @@ header {
 }
 
 .footer-wrapper {
+  position: relative;
   width: $width-contents;
   margin: 0 auto;
-  padding: 21px 21px 34px;
+  padding: 21px;
   nav {
     width: 100%;
     margin-bottom: 13px;
@@ -364,20 +374,33 @@ header {
     }
   }
   span {
+    display: block;
+    margin-bottom: 13px;
     color: #ffffff;
     a {
       color: inherit;
-    }    
+    }
   }
-}
-
-.cf {
-  @include clearfix;
-}
-
-//.pie {
-//  @include pie-element(relative);
-//}
-.pie {
-  behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc")
+  .footer-fb {
+    position: relative;
+    &:after {
+      content: " ";
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      top: 50%;
+      right: -21px;
+      margin-top: -6.5px;
+      background: url("http://static.tumblr.com/pqi9beo/g6qo088vr/fb-logo_small.png") 0 0 no-repeat;
+    }
+  }
+  .footer-logo {
+    display: block;
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    background: url("http://static.tumblr.com/pqi9beo/5ydo087gt/header-logo_white_small.png") 0 0 no-repeat;
+  }
 }

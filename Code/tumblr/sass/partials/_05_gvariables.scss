@@ -1,5 +1,13 @@
 // Global variables partial
 
+.align-l {
+  text-align: left;
+}
+
+.highlight {
+  color: $color-highlight;
+}
+
 .cf {
   @include clearfix;
 }
