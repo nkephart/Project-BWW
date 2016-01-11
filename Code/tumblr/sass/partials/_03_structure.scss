@@ -56,24 +56,30 @@ header {
   }
   h1 {
     display: block;
-    height: 200px;
-    width: 240px;
+    height: 300px;
+    width: 360px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -100px 0 0 -120px;
+    margin: -150px 0 0 -180px;
     a {
-      background: url("http://static.tumblr.com/pqi9beo/1kYo04s9n/header-logo_white.png") 0 0 no-repeat;
+      background: url("http://static.tumblr.com/7gbg36y/3QPo0s38i/header-logo_white.png") 0 0 no-repeat;
     }
   }
-  .header-fb {
-    display: block;
-    height: 34px;
-    width: 34px;
-    position: absolute;
-    bottom: 21px;
-    right: 21px;
-    background: url("http://static.tumblr.com/pqi9beo/H7ho088uu/fb-logo.png") 0 0 no-repeat;
+}
+
+.header-fb {
+  display: block;
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  bottom: 21px;
+  right: 21px;
+  background: url("http://static.tumblr.com/pqi9beo/H7ho088uu/fb-logo.png") 0 0 no-repeat;
+  @include border-radius(50%);
+  @include transition(transform 0.3s ease-in-out);
+  &:hover {
+    @include rotate(360deg);
   }
 }
 
@@ -137,7 +143,12 @@ header {
       width: 100%;
       padding: 0;
       li {
-        list-style: none;      
+        list-style: none;
+        @include transition(all 0.1s ease-in-out);
+      }
+      a {
+        padding-bottom: 2px;
+        border-bottom: dotted 1px $color-highlight;
       }
     }
   }
@@ -198,6 +209,9 @@ header {
     @include prefixed-property(writing-mode, vertical-rl);
     -ms-writing-mode: tb-rl;
   }
+  .nomargin-text {
+    margin: 0;
+  }
 }
 
 // Contact section
@@ -229,17 +243,43 @@ header {
     line-height: 1.615;
     border: solid 1px $color-border;
     @include border-radius(1px);
+    @include transition(all 0.5s ease-in-out)
   }
   #ss-submit {
+    overflow: hidden;
+    position: relative;
     margin-top: 13px;
     padding: 3px 13px;
-    color: #ffffff;
     background: $color-highlight;
+    color: #ffffff;
     border: solid 1px $color-border;
     @include border-radius(3px);
-
+    &:hover {
+      background: lighten($color-highlight, 3%);
+    }
+    &:active {
+      background: lighten($color-highlight, 10%);
+    }
+  }
+  #ss-submit.button-sent {
+    background: $color-highlight;
+    &:hover {
+      background: $color-highlight;
+    }
+    &:active {
+      background: $color-highlight;
+    }
   }
 }
+
+.form-input-sent {
+  color: $color-disabled;
+}
+
+.form-message-sent {
+  color: $color-highlight;
+}
+
 
 // Tagged page
 
@@ -390,6 +430,7 @@ header {
       right: -21px;
       margin-top: -6.5px;
       background: url("http://static.tumblr.com/pqi9beo/g6qo088vr/fb-logo_small.png") 0 0 no-repeat;
+      @include border-radius(50%);
     }
   }
   .footer-logo {
