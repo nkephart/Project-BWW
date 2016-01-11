@@ -200,77 +200,75 @@ header {
 .info-wrapper {
   width: 987px;
   margin: 0 auto;
-  padding: 21px 0;
+  padding: 21px;
 }
 /* line 121, ../sass/partials/_03_structure.scss */
 .info-wrapper .calendar-wrapper {
   float: left;
   width: 50%;
-  padding-left: 21px;
 }
-/* line 125, ../sass/partials/_03_structure.scss */
+/* line 124, ../sass/partials/_03_structure.scss */
 .info-wrapper .calendar-wrapper img {
   width: 80%;
 }
-/* line 129, ../sass/partials/_03_structure.scss */
+/* line 128, ../sass/partials/_03_structure.scss */
 .info-wrapper .news-wrapper {
   float: left;
   width: 50%;
-  padding-left: 21px;
 }
-/* line 133, ../sass/partials/_03_structure.scss */
+/* line 131, ../sass/partials/_03_structure.scss */
 .info-wrapper .news-wrapper h3, .info-wrapper .news-wrapper h3 a, h3 .info-wrapper .news-wrapper a {
   margin: 0 0 21px;
   text-align: left;
   color: #8b4513;
 }
-/* line 138, ../sass/partials/_03_structure.scss */
+/* line 136, ../sass/partials/_03_structure.scss */
 .info-wrapper .news-wrapper ol {
   width: 100%;
   padding: 0;
 }
-/* line 141, ../sass/partials/_03_structure.scss */
+/* line 139, ../sass/partials/_03_structure.scss */
 .info-wrapper .news-wrapper ol li {
   list-style: none;
 }
 
-/* line 150, ../sass/partials/_03_structure.scss */
+/* line 148, ../sass/partials/_03_structure.scss */
 .panel-odd {
   width: 100%;
   min-width: 987px;
 }
 
-/* line 155, ../sass/partials/_03_structure.scss */
+/* line 153, ../sass/partials/_03_structure.scss */
 .panel-even {
   width: 100%;
   min-width: 987px;
   background: #fffaf0;
 }
 
-/* line 161, ../sass/partials/_03_structure.scss */
+/* line 159, ../sass/partials/_03_structure.scss */
 .contents-wrapper {
   width: 987px;
   margin: 0 auto;
   padding: 21px;
 }
-/* line 165, ../sass/partials/_03_structure.scss */
+/* line 163, ../sass/partials/_03_structure.scss */
 .contents-wrapper h2, .contents-wrapper h2 a, h2 .contents-wrapper a {
   margin: 13px 0 34px;
   text-align: center;
   color: #8b4513;
 }
-/* line 170, ../sass/partials/_03_structure.scss */
+/* line 168, ../sass/partials/_03_structure.scss */
 .contents-wrapper h3, .contents-wrapper h3 a, h3 .contents-wrapper a {
   margin: 0 0 21px;
   text-align: center;
   color: #8b4513;
 }
-/* line 175, ../sass/partials/_03_structure.scss */
+/* line 173, ../sass/partials/_03_structure.scss */
 .contents-wrapper ul {
   width: 100%;
   padding: 0;
 }
-/* line 178, ../sass/partials/_03_structure.scss */
+/* line 176, ../sass/partials/_03_structure.scss */
 .contents-wrapper ul li {
   float: left;
   width: 50%;
@@ -279,19 +277,19 @@ header {
   text-align: center;
   list-style: none;
 }
-/* line 187, ../sass/partials/_03_structure.scss */
+/* line 185, ../sass/partials/_03_structure.scss */
 .contents-wrapper p {
   width: 100%;
   line-height: 2.1em;
 }
-/* line 191, ../sass/partials/_03_structure.scss */
+/* line 189, ../sass/partials/_03_structure.scss */
 .contents-wrapper img {
   width: 329px;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 195, ../sass/partials/_03_structure.scss */
+/* line 193, ../sass/partials/_03_structure.scss */
 .contents-wrapper .vertical-text {
   display: inline;
   width: auto;
@@ -305,7 +303,7 @@ header {
   -ms-writing-mode: tb-rl;
 }
 
-/* line 207, ../sass/partials/_03_structure.scss */
+/* line 205, ../sass/partials/_03_structure.scss */
 .panel-contact {
   width: 100%;
   min-width: 987px;
@@ -313,25 +311,25 @@ header {
   border-top: solid 1px #faebd7;
 }
 
-/* line 214, ../sass/partials/_03_structure.scss */
+/* line 212, ../sass/partials/_03_structure.scss */
 #contact-table {
   width: 100%;
 }
-/* line 216, ../sass/partials/_03_structure.scss */
+/* line 214, ../sass/partials/_03_structure.scss */
 #contact-table .contact-td-l {
   width: 50%;
   margin: 0;
   padding: 0 10.5px 13px 0;
   text-align: right;
 }
-/* line 222, ../sass/partials/_03_structure.scss */
+/* line 220, ../sass/partials/_03_structure.scss */
 #contact-table .contact-td-r {
   width: 50%;
   margin: 0;
   padding: 0 0 13px 10.5px;
   text-align: left;
 }
-/* line 228, ../sass/partials/_03_structure.scss */
+/* line 226, ../sass/partials/_03_structure.scss */
 #contact-table input, #contact-table textarea {
   margin: 0;
   padding: 5px 8px;
@@ -341,7 +339,7 @@ header {
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 235, ../sass/partials/_03_structure.scss */
+/* line 233, ../sass/partials/_03_structure.scss */
 #contact-table #ss-submit {
   margin-top: 13px;
   padding: 3px 13px;
@@ -353,26 +351,26 @@ header {
   border-radius: 3px;
 }
 
-/* line 248, ../sass/partials/_03_structure.scss */
+/* line 246, ../sass/partials/_03_structure.scss */
 .panel-permalink, .panel-tagged {
   width: 100%;
   min-width: 987px;
   padding: 21px 0;
   background: #fffaf0;
 }
-/* line 253, ../sass/partials/_03_structure.scss */
+/* line 251, ../sass/partials/_03_structure.scss */
 .panel-permalink h2, .panel-permalink h2 a, h2 .panel-permalink a, .panel-tagged h2, .panel-tagged h2 a, h2 .panel-tagged a {
   margin: 13px 0 34px;
   text-align: center;
   color: #8b4513;
 }
-/* line 258, ../sass/partials/_03_structure.scss */
+/* line 256, ../sass/partials/_03_structure.scss */
 .panel-permalink ol, .panel-tagged ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 264, ../sass/partials/_03_structure.scss */
+/* line 262, ../sass/partials/_03_structure.scss */
 .permalink-wrapper, .tagged-wrapper {
   display: block;
   width: 610px;
@@ -384,31 +382,31 @@ header {
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 273, ../sass/partials/_03_structure.scss */
+/* line 271, ../sass/partials/_03_structure.scss */
 .permalink-wrapper h3, .permalink-wrapper h3 a, h3 .permalink-wrapper a, .tagged-wrapper h3, .tagged-wrapper h3 a, h3 .tagged-wrapper a {
   margin: 0 0 21px;
   text-align: left;
   color: #8b4513;
 }
-/* line 278, ../sass/partials/_03_structure.scss */
+/* line 276, ../sass/partials/_03_structure.scss */
 .permalink-wrapper img, .tagged-wrapper img {
   display: block;
   margin: 0 auto;
 }
-/* line 282, ../sass/partials/_03_structure.scss */
+/* line 280, ../sass/partials/_03_structure.scss */
 .permalink-wrapper footer, .tagged-wrapper footer {
   padding-top: 13px;
   border-top: solid 1px #faebd7;
 }
 
-/* line 289, ../sass/partials/_03_structure.scss */
+/* line 287, ../sass/partials/_03_structure.scss */
 .メニュー ol {
   display: block;
   width: 987px;
   margin: 0 auto;
   padding: 0;
 }
-/* line 295, ../sass/partials/_03_structure.scss */
+/* line 293, ../sass/partials/_03_structure.scss */
 .メニュー .tagged-wrapper {
   float: left;
   display: block;
@@ -416,80 +414,80 @@ header {
   margin: 0 21px 34px;
   padding: 21px 21px 0;
 }
-/* line 301, ../sass/partials/_03_structure.scss */
+/* line 299, ../sass/partials/_03_structure.scss */
 .メニュー .tagged-wrapper img {
   width: 245px;
 }
-/* line 304, ../sass/partials/_03_structure.scss */
+/* line 302, ../sass/partials/_03_structure.scss */
 .メニュー .tagged-wrapper p {
   text-align: center;
 }
-/* line 307, ../sass/partials/_03_structure.scss */
+/* line 305, ../sass/partials/_03_structure.scss */
 .メニュー .tagged-wrapper footer {
   display: none;
 }
 
-/* line 313, ../sass/partials/_03_structure.scss */
+/* line 311, ../sass/partials/_03_structure.scss */
 .pagination {
   width: 610px;
   margin: 0 auto 13px;
 }
-/* line 316, ../sass/partials/_03_structure.scss */
+/* line 314, ../sass/partials/_03_structure.scss */
 .pagination ul {
   margin: 0;
   padding: 0;
 }
-/* line 320, ../sass/partials/_03_structure.scss */
+/* line 318, ../sass/partials/_03_structure.scss */
 .pagination li {
   width: 33.3%;
   list-style: none;
 }
-/* line 323, ../sass/partials/_03_structure.scss */
+/* line 321, ../sass/partials/_03_structure.scss */
 .pagination li:first-child {
   float: left;
   text-align: left;
 }
-/* line 327, ../sass/partials/_03_structure.scss */
+/* line 325, ../sass/partials/_03_structure.scss */
 .pagination li:nth-child(2) {
   float: right;
   text-align: right;
 }
-/* line 331, ../sass/partials/_03_structure.scss */
+/* line 329, ../sass/partials/_03_structure.scss */
 .pagination li:last-child {
   margin: 0 auto;
   text-align: center;
   color: #8b4513;
 }
-/* line 336, ../sass/partials/_03_structure.scss */
+/* line 334, ../sass/partials/_03_structure.scss */
 .pagination li a {
   padding: 5px 0;
 }
 
-/* line 344, ../sass/partials/_03_structure.scss */
+/* line 342, ../sass/partials/_03_structure.scss */
 .panel-footer {
   width: 100%;
   min-width: 987px;
   background: #8b4513;
 }
 
-/* line 350, ../sass/partials/_03_structure.scss */
+/* line 348, ../sass/partials/_03_structure.scss */
 .footer-wrapper {
   position: relative;
   width: 987px;
   margin: 0 auto;
   padding: 21px;
 }
-/* line 355, ../sass/partials/_03_structure.scss */
+/* line 353, ../sass/partials/_03_structure.scss */
 .footer-wrapper nav {
   width: 100%;
   margin-bottom: 13px;
 }
-/* line 358, ../sass/partials/_03_structure.scss */
+/* line 356, ../sass/partials/_03_structure.scss */
 .footer-wrapper nav ol {
   margin: 0;
   padding: 0;
 }
-/* line 362, ../sass/partials/_03_structure.scss */
+/* line 360, ../sass/partials/_03_structure.scss */
 .footer-wrapper nav li {
   margin-right: 13px;
   color: #ffffff;
@@ -499,29 +497,29 @@ header {
   *zoom: 1;
   *display: inline;
 }
-/* line 366, ../sass/partials/_03_structure.scss */
+/* line 364, ../sass/partials/_03_structure.scss */
 .footer-wrapper nav li:last-child {
   margin: 0;
 }
-/* line 371, ../sass/partials/_03_structure.scss */
+/* line 369, ../sass/partials/_03_structure.scss */
 .footer-wrapper nav li a {
   color: inherit;
 }
-/* line 376, ../sass/partials/_03_structure.scss */
+/* line 374, ../sass/partials/_03_structure.scss */
 .footer-wrapper span {
   display: block;
   margin-bottom: 13px;
   color: #ffffff;
 }
-/* line 380, ../sass/partials/_03_structure.scss */
+/* line 378, ../sass/partials/_03_structure.scss */
 .footer-wrapper span a {
   color: inherit;
 }
-/* line 384, ../sass/partials/_03_structure.scss */
+/* line 382, ../sass/partials/_03_structure.scss */
 .footer-wrapper .footer-fb {
   position: relative;
 }
-/* line 386, ../sass/partials/_03_structure.scss */
+/* line 384, ../sass/partials/_03_structure.scss */
 .footer-wrapper .footer-fb:after {
   content: " ";
   height: 13px;
@@ -532,7 +530,7 @@ header {
   margin-top: -6.5px;
   background: url("http://static.tumblr.com/pqi9beo/g6qo088vr/fb-logo_small.png") 0 0 no-repeat;
 }
-/* line 397, ../sass/partials/_03_structure.scss */
+/* line 395, ../sass/partials/_03_structure.scss */
 .footer-wrapper .footer-logo {
   display: block;
   height: 100px;

@@ -117,11 +117,10 @@ header {
 .info-wrapper {
   width: $width-contents;
   margin: 0 auto;
-  padding: 21px 0;
+  padding: 21px;
   .calendar-wrapper {
     float: left;
     width: 50%;
-    padding-left: 21px;
     img {
       width: 80%;
     }
@@ -129,7 +128,6 @@ header {
   .news-wrapper {
     float: left;
     width: 50%;
-    padding-left: 21px;
     h3 {
       margin: 0 0 21px;
       text-align: left;
