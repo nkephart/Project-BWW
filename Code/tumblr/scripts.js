@@ -47,7 +47,7 @@ function sendForm() {
       var i;
       $this.empty();
       if (data.response.total_posts === 0) {
-        $this.append($('<li>お知らせはありません</li>'));
+        $this.append($('<li>（現在お知らせはありません）</li>'));
       } else {
         $.each(data.response.posts, function (idx, post) {
           date = post.date.substr(5, 5).replace('-', '/');

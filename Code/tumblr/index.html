@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2016.1.11 / Ver 0.9
+  Last updated 2016.1.16 / Ver 1.0
 -->
 <html>
 <head>
@@ -74,7 +74,7 @@
       </div>
       <div class="news-wrapper">
         <h3>最新のお知らせ</h3>
-        <p>当店では毎週XXXにXXXをXXXしています。イベントへの出店情報、ご注文いただいたパンの発送日程はカレンダーに記載の情報をご覧ください。そのほかの最新のお知らせや新メニューのご紹介は、下の欄をご覧ください。</p>
+        <p>イベントへの出店情報、ご注文いただいたパンの発送日程はカレンダーに記載の情報をご覧ください。そのほかの最新のお知らせや新メニューのご紹介は、下の欄をご覧ください。</p>
         <ol id="news-contents">
           <li>&minus;&nbsp;読み込み中&hellip;</li>
         </ol>
@@ -161,15 +161,15 @@
               </tr>
               <tr>
                 <td class="contact-td-l">電話番号</td>
-                <td class="contact-td-r"><input type="phone" size="30" name="entry.2018790722" id="entry_2018790722" class="form-phone" dir="auto" aria-label="E-Mail Address" aria-required="true" required></td>
+                <td class="contact-td-r"><input type="tel" size="30" name="entry.2018790722" id="entry_2018790722" class="form-phone" dir="auto" aria-label="電話番号" aria-required="true" required></td>
               </tr>
               <tr>
                 <td class="contact-td-l">メールアドレス</td>
-                <td class="contact-td-r"><input type="email" size="30" name="entry.458261783" id="entry_458261783" class="form-email" dir="auto" aria-label="E-Mail Address" aria-required="true" required></td>
+                <td class="contact-td-r"><input type="email" size="30" name="entry.458261783" id="entry_458261783" class="form-email" dir="auto" aria-label="メールアドレス" aria-required="true" required></td>
               </tr>
               <tr>
                 <td class="contact-td-l">お問い合わせ内容</td>
-                <td class="contact-td-r"><textarea name="entry.805645402" rows="8" cols="50" id="entry_805645402" class="form-text" dir="auto" aria-label="Message"></textarea></td>
+                <td class="contact-td-r"><textarea name="entry.805645402" rows="8" cols="50" id="entry_805645402" class="form-text" dir="auto" aria-label="お問い合わせ内容"></textarea></td>
               </tr>
               <tr>
                 <td class="contact-td-l"></td>
@@ -223,6 +223,21 @@
       </li>
     </ol>
     {/block:Photo}
+  
+    {block:Photoset}
+    <ol>
+      <li class="tagged-wrapper">
+        {block:Photos}<a href="{PhotoURL-500}" title="{Caption}" data-gallery="gallery"><img class="photoset-img" src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>{/block:Photos}
+        {block:Caption}{Caption}{/block:Caption}
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
+    {/block:Photoset}
+  
     {/block:Posts}
   </section>
   {/block:PermalinkPage}
@@ -258,6 +273,21 @@
       </li>
     </ol>
     {/block:Photo}
+
+    {block:Photoset}
+    <ol>
+      <li class="tagged-wrapper">
+        {block:Photos}<a href="{PhotoURL-500}" title="{Caption}" data-gallery="gallery"><img class="photoset-img" src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>{/block:Photos}
+        {block:Caption}{Caption}{/block:Caption}        
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
+    {/block:Photoset}
+    
     {/block:Posts}
     
     {block:Pagination}
@@ -276,7 +306,6 @@
     <div class="footer-wrapper">
       <nav role="navigation">
         <ol>
-          <li><a href="{BlogURL}" title="トップページ">トップページ</a></li><li>|</li>
           <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li><li>|</li>
           <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li><li>|</li>
           <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li><li>|</li>
@@ -292,7 +321,7 @@
 </article>
 <!-- jQuery libs and scripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://static.tumblr.com/7gbg36y/W0ao0snpm/scripts.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/7gbg36y/z5eo119z8/scripts.js"></script>
 <script type="text/javascript"> // Minimized Google Analytics code
 $(window).on('load',function(){
   $.getScript('//www.google-analytics.com/analytics.js');

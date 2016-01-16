@@ -261,7 +261,7 @@ header {
       background: lighten($color-highlight, 10%);
     }
   }
-  #ss-submit.button-sent {
+  .button-sent {
     background: $color-highlight;
     &:hover {
       background: $color-highlight;
@@ -316,6 +316,9 @@ header {
   img {
     display: block;
     margin: 0 auto;
+  }
+  .photoset-img {
+    margin-bottom: 21px;
   }
   footer {
     padding-top: 13px;
@@ -398,7 +401,7 @@ header {
       padding: 0;
     }
     li {
-      margin-right: 13px;
+      margin-right: 8px;
       color: #ffffff;
       @include inline-block;
       &:last-child {
