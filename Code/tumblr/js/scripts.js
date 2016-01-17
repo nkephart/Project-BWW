@@ -6,11 +6,19 @@
 
 function sendForm() {
   'use strict';
-  var status = true;
-//  $('.ss-submit-progress').animate({'width': '100%'}, 500);
-  $('#ss-submit').addClass('button-sent').attr('disabled', true);
-  $('.form-name, .form-phone, .form-email, .form-text').addClass('form-input-sent');
-  $('.form-message').css({'opacity': '0'}).html("メッセージが送信されました").addClass('form-message-sent').delay(500).animate({'opacity': '1'}, 300);
+  var status = false;
+
+  if (document.forms['ss-form']['entry.901227537'].value === "" && document.forms['ss-form']['entry.458261783'].value === "") {
+    $('#ss-submit').replaceWith($('#ss-submit').clone(true));
+    $('#ss-submit').addClass('button-shake');
+    $('.form-name,.form-email,.form-text').addClass('form-input-warning');
+  } else {
+    status = true;
+    $('#ss-submit').removeClass('button-shake').addClass('button-sent').attr('disabled', true);
+    $('.form-name,.form-email,.form-text').removeClass('form-input-warning');
+    $('.form-name,.form-tel,.form-email,.form-text').addClass('form-input-sent');
+    $('.form-message').css({'opacity': '0'}).html("メッセージが送信されました").addClass('form-message-sent').delay(500).animate({'opacity': '1'}, 300);
+  }
   return status;
 }
 
