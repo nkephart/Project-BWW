@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
      ___       ___       ___       ___       ___       ___   
     /\  \     /\__\     /\  \     /\  \     /\  \     /\  \  
@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2015.09.19 / Ver 0.1
+  Last updated 2016.1.17 / Ver 1.0
 -->
 <html>
 <head>
@@ -27,15 +27,16 @@
 <meta property="og:site_name" content="{Title}">
 <meta property="og:description" content="{MetaDescription}">
 <!-- Tumblr settings -->
-<meta name="image:Header" content="{HeaderImage}">
+<!--meta name="image:Header" content="{HeaderImage}"-->
+<meta name="image:Calendar">
 <!-- General settings -->
 <title>{block:SearchPage}Search results for: {SearchQuery} | {/block:SearchPage}{block:PostTitle}{PostTitle} | {/block:PostTitle}{Title}</title>
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="apple-touch-icon" href="{PortraitURL-128}">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
 <!-- CSS files -->
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/pqi9beo/zsanxt7ib/normalize.css">
+<link rel="stylesheet" type="text/css" href="http://static.tumblr.com/7gbg36y/LPBo0snl2/style.css">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -45,124 +46,282 @@
 <body>
 <a id="top-ancher"></a>
 <article role="main">
-  <header role="banner" id="header-panel" class="panel">
-    <div id="header-image">
+  <header role="banner">
+    <div class="header-wrapper">
       <img src="{HeaderImage}" />
-      <h1><a href="{BlogURL}" title="{BlogTitle}">{BlogTitle}</a></h1>
+      <h1 class="header-logo"><a href="{BlogURL}" title="{BlogTitle}"></a></h1>
+      <a href="http://www.facebook.com/yamanopanya" title="フェイスブック" class="header-fb"></a>
     </div>
-    <nav role="navigation" class="mb50">
-      <ol>
-        <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li>
-        <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
-        <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
-        {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
-      </ol>
-    </nav>
+    <div class="nav-wrapper">
+      <nav role="navigation">
+        <ol>
+          <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li>
+          <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li>
+          <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li>
+          {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+          <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
+        </ol>
+      </nav>
+    </div>
   </header>
-  
   {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
-
-  <section>
-    <h2 id="about">山のパン屋について</h2>
-    <div>
-      <h3>山のパン屋</h3>
-      <p>「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った<br />自然酵母＋国産小麦＋塩＋水のみで<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p>
-      <div>image</div>
-    </div>
-    <div>
-      <div>image</div>
-      <h3>自然酵母</h3>
-      <p>イースト菌や市販の天然酵母は使わず、麹から手づくりをしている酒種酵母や甘酒酵母、旬の果物酵母を使っています。米が主原料の甘酒酵母は麹を作り始めてから酵母ができるまで2週間、酒種酵母は1ヶ月半かかります。長い時間かけて作られた酵母、そして低温でゆっくり発酵させた酵母パンは時間が経つにつれ熟成され風味が変化していきます。</p>
-    </div>
-    <div>
-      <h3>パンについて</h3>
-      <p>田舎パン、自家製あんこのあんパン、レーズン蒸しパン、フォッカッチャ、ワインブレッド、黒豆パン、酵母マフィン、全粒粉のコンプレ、その他季節の酵母パンやドライフルーツやナッツのパンなどを、季節に合わせて作っています。<br />バター、玉子、砂糖は原則使用していませんが、バターロールやクロワッサンはバターを使用、自家製あんこやピールに甜菜糖を使用しています。毎回、作るパンが異なりますので、詳細はお問い合わせください。</p>
-      <div>image</div>
-    </div>
-    <div>
-      <div>image</div>
-      <h3>主な原材料</h3>
-      <p><b>＜酵母＞</b>自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母<br /><b>＜小麦粉＞</b>低農薬群馬県産小麦<br /><b>＜塩＞</b>沖縄県産あら塩<br /><b>＜ドライフルーツやナッツ＞</b>すべてオーガニックのものを使用<br /><b>＜果物や野菜＞</b>自家栽培や地元のもの</p>
-      <h3>オーダー方法</h3>
-      <p></p>
+  <section class="panel-info">
+    <div class="info-wrapper cf">
+      <div class="calendar-wrapper">
+        <img src="{image:Calendar}" />
+      </div>
+      <div class="news-wrapper">
+        <h3>最新のお知らせ</h3>
+        <p>イベントへの出店情報、ご注文いただいたパンの発送日程はカレンダーに記載の情報をご覧ください。そのほかの最新のお知らせや新メニューのご紹介は、下の欄をご覧ください。</p>
+        <ol id="news-contents">
+          <li>&minus;&nbsp;読み込み中&hellip;</li>
+        </ol>
+      </div>
     </div>
   </section>
 
+  <a id="about"></a>
+  <section class="panel-odd">
+    <div class="contents-wrapper">
+      <h2>山のパン屋について</h2>
+      <ul class="cf">
+        <li><p class="nomargin-text">「自然酵母 山のパン屋」は<br />南房総の小さな田んぼで<br />無農薬肥料でお米を育て、<br />そのお米で作った自然酵母と<br />国産小麦＋塩＋水で<br />一つ一つ手捏ねで<br />焼いているパン屋です。</p></li>
+        <li><img src="http://static.tumblr.com/pqi9beo/E1Onxt2nb/9.png" />
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="panel-even">
+    <div class="contents-wrapper">
+      <ul class="cf">
+        <li><img src="http://static.tumblr.com/pqi9beo/Q7pnxt2mu/1.png" />
+        </li>
+        <li>
+          <h3>自然酵母</h3>
+          <p>イースト菌や市販の天然酵母は使わず、<br />麹から手づくりをしている酒種酵母や甘酒酵母、<br />旬の果物酵母を使っています。<br />米が主原料の甘酒酵母は麹を<br />作り始めてから酵母ができるまで2週間、<br />酒種酵母は1ヶ月半かかります。<br />長い時間かけて作られた酵母、<br />そして低温でゆっくり発酵させた酵母パンは<br />時間が経つにつれ熟成され<br />風味が変化していきます。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="panel-odd">
+    <div class="contents-wrapper">
+      <ul class="cf">
+        <li>
+          <h3>パンについて</h3>
+          <p>田舎パン、自家製あんこのあんパン、<br />レーズン蒸しパン、フォッカッチャ、<br />ワインブレッド、黒豆パン、酵母マフィン、<br />全粒粉のコンプレ、その他季節の酵母パンや<br />ドライフルーツやナッツのパンなどを、<br />季節に合わせて作っています。<br />バター、玉子、砂糖は原則使用していませんが、<br />バターロールやクロワッサンはバターを使用、<br />自家製あんこやピールに甜菜糖を使用しています。<br />毎回、作るパンが異なりますので、<br />詳細はお問い合わせください。</p>
+        </li>
+        <li><img src="http://static.tumblr.com/pqi9beo/JYVnxt2n5/5.png" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="panel-even">
+    <div class="contents-wrapper">
+      <ul class="cf">
+        <li><img src="http://static.tumblr.com/pqi9beo/yElnxt2r8/4.png"></li>
+        <li>
+          <h3>主な原材料</h3>
+          <p class="align-l"><span class="highlight">＜酵母＞</span>&nbsp;自家培養酒種酵母、自家培養甘酒酵母、旬の果物酵母<br /><span class="highlight">＜小麦粉＞</span>&nbsp;低農薬群馬県産小麦<br /><span class="highlight">＜塩＞</span>&nbsp;沖縄県産あら塩<br /><span class="highlight">＜ドライフルーツやナッツ＞</span>&nbsp;すべてオーガニックのものを使用<br /><span class="highlight">＜果物や野菜＞</span>&nbsp;自家栽培や地元のもの</p>
+          <h3>温め方</h3>
+          <p class="align-l">米が主原料の自然酵母パンは時間が経つと固くなります。<br />フライパンに蓋をして蒸し焼きにしますと元の柔らかさが戻ります。<br />蒸をして温めますとモチモチな食感になります。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="panel-odd">
+    <div class="contents-wrapper">
+      <ul class="cf">
+        <li>
+          <h3>オーダー方法</h3>
+          <p><a href="#contact">お問い合わせフォーム</a>にてご注文を承ります。</p>
+          <p><span class="highlight">おまかせセット&nbsp;&nbsp;&nbsp;&yen;2,000&nbsp;/&nbsp;&yen;3,000<br />おこのみオーダー&nbsp;&nbsp;&nbsp;1個〜</span><br />送料、振込手数料別</p>
+          <p><span class="highlight">＜お支払い方法＞<br />銀行振込、または代金引換</span><br />振込手数料、代金引換手数料は<br />お客様のご負担とさせていただきます。</p>
+        </li>
+        <li><img src="http://static.tumblr.com/pqi9beo/JYVnxt2n5/5.png" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="panel-contact">
+    <div class="contents-wrapper">
+      <h2>お問い合わせ</h2>
+      <div id="contact-form-wrapper">
+        <form action="https://docs.google.com/forms/d/1Gm9zPFYiLMWKUri99iinLOygmaLyDH2dC7GaqKotDEs/formResponse" method="POST" name="ss-form" id="ss-form" class="form-container" target="submit_iframe" onsubmit="return sendForm()">
+          <iframe hidden name="submit_iframe" id="submit_iframe"></iframe>
+          <section>
+            <table id="contact-table">
+              <tr>
+                <td class="contact-td-l">お名前</td>
+                <td class="contact-td-r"><input type="text" size="30" name="entry.901227537" id="entry_901227537" class="form-name" dir="auto" aria-label="お名前  " aria-required="true" required></td>
+              </tr>
+              <tr>
+                <td class="contact-td-l">電話番号</td>
+                <td class="contact-td-r"><input type="tel" size="30" name="entry.2018790722" id="entry_2018790722" class="form-tel" dir="auto" aria-label="電話番号" aria-required="true" required></td>
+              </tr>
+              <tr>
+                <td class="contact-td-l">メールアドレス</td>
+                <td class="contact-td-r"><input type="email" size="30" name="entry.458261783" id="entry_458261783" class="form-email" dir="auto" aria-label="メールアドレス" aria-required="true" required></td>
+              </tr>
+              <tr>
+                <td class="contact-td-l">お問い合わせ内容</td>
+                <td class="contact-td-r"><textarea name="entry.805645402" rows="8" cols="50" id="entry_805645402" class="form-text" dir="auto" aria-label="お問い合わせ内容"></textarea></td>
+              </tr>
+              <tr>
+                <td class="contact-td-l"></td>
+                <td class="contact-td-r">
+                  <span class="form-message">内容をご確認の上、「送信」ボタンをクリックしてください</span>
+                  <section>
+                    <input type="hidden" name="draftResponse" value="[,,&quot;-2919550254214947495&quot;]">
+                    <input type="hidden" name="pageHistory" value="0">
+                    <input type="hidden" name="fvv" value="0">
+                    <input type="hidden" name="fbzx" value="-2919550254214947495">
+                    <button type="submit" name="submit" value="&#36865;&#20449;" id="ss-submit">送信</button>
+                  </section>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </form>
+      </div>
+    </div>
+  </section>
   {/block:IndexPage}
   {block:TagPage}-->{/block:TagPage}
   {block:SearchPage}-->{/block:SearchPage}
-
   {block:PermalinkPage}
-  <section class="panel mb130">
+  <section class="panel-permalink">
     {block:Posts}
     {block:Text}
-    <section>
-      {block:Title}<h2 class="tag-name mb50">{Title}</h2>{/block:Title}
-      {Body}
-      <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
-    </section>
+    <ol>
+      {block:Title}<h2>{Title}</h2>{/block:Title}
+      <li class="permalink-wrapper">
+        {Body}
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
     {/block:Text}
-
+  
     {block:Photo}
-    <section>
-      {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
-      {block:Caption}{Caption}{block:Caption}
-      <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
-    </section>
+    <ol>
+      <li class="permalink-wrapper">
+        {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+        {block:Caption}{Caption}{block:Caption}
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
     {/block:Photo}
-    {/block:Posts}  
+  
+    {block:Photoset}
+    <ol>
+      <li class="tagged-wrapper">
+        {block:Photos}<a href="{PhotoURL-500}" title="{Caption}" data-gallery="gallery"><img class="photoset-img" src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>{/block:Photos}
+        {block:Caption}{Caption}{/block:Caption}
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
+    {/block:Photoset}
+  
+    {/block:Posts}
   </section>
   {/block:PermalinkPage}
 
   {block:TagPage}
-  <section class="{TagsAsClasses} panel mb130">
-    <h2 class="tag-name mb50">&mdash;&nbsp;{Tag}&nbsp;&mdash;</h2>
-    <ol class="pl0">
+  <section class="panel-tagged {Tag} cf">
+    <h2>{Tag}</h2>
     {block:Posts}
-      {block:Text}
-      <li class="ls-n mb130">
-        <section>
-          {block:Title}<h3 class="title-tagged">{Title}</h3>{/block:Title}
-          {Body}
-          <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
-        </section>
+    {block:Text}
+    <ol>
+      <li class="tagged-wrapper">
+        {block:Title}<h3>{Title}</h3>{/block:Title}
+        {Body}
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
       </li>
-      {/block:Text}
-
-      {block:Photo}
-      <li class="ls-n mb130">
-        <section>
-          <a href="{PhotoURL-500}" class="boxer" title="{Caption}" data-gallery="gallery"><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>
-          {block:Caption}{Caption}{/block:Caption}
-          <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
-        </section>
-      </li>
-      {/block:Photo}
-    {/block:Posts}
     </ol>
+    {/block:Text}
+
+    {block:Photo}
+    <ol>
+      <li class="tagged-wrapper">
+        <a href="{PhotoURL-500}" title="{Caption}" data-gallery="gallery"><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>
+        {block:Caption}{Caption}{/block:Caption}
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
+    {/block:Photo}
+
+    {block:Photoset}
+    <ol>
+      <li class="tagged-wrapper">
+        {block:Photos}<a href="{PhotoURL-500}" title="{Caption}" data-gallery="gallery"><img class="photoset-img" src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>{/block:Photos}
+        {block:Caption}{Caption}{/block:Caption}        
+        {block:Date}
+        <footer>
+          {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+        </footer>
+        {/block:Date}
+      </li>
+    </ol>
+    {/block:Photoset}
+    
+    {/block:Posts}
     
     {block:Pagination}
-    <footer class="pagination">
-      {block:PreviousPage}<a href="{PreviousPage}" class="page-linker page-previous" title="Previous">&larr;&nbsp;古い投稿</a>{/block:PreviousPage}
-      {block:NextPage}<a href="{NextPage}" class="page-linker page-next" title="Next">新しい投稿&nbsp;&rarr;</a>{/block:NextPage}
-      <span class="page-count">{CurrentPage}&nbsp;/&nbsp;{TotalPages}</span>
+    <footer class="pagination cf">
+      <ul>
+        <li>{block:PreviousPage}<a href="{PreviousPage}" title="もっと最近">&larr;&nbsp;もっと最近</a>{/block:PreviousPage}</li>
+        <li>{block:NextPage}<a href="{NextPage}" title="もっと古い">もっと古い&nbsp;&rarr;</a>{/block:NextPage}</li>
+        <li>{CurrentPage}/{TotalPages}</li>
+      </ul>
     </footer>
     {/block:Pagination}
   </section>
   {/block:TagPage}
 
-  <div class="footer-element"></div>
-  <footer role="contentinfo" class="cf">
-    <ul>
-      <li>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a></li>
-      <li>A&nbsp;<a href="" title="" target="_blank">OUR*IRO</a>&nbsp;product</li>
-    </ul>
+  <footer role="contentinfo" class="panel-footer">
+    <div class="footer-wrapper">
+      <nav role="navigation">
+        <ol>
+          <li><a href="/#about" title="山のパン屋について">山のパン屋について</a></li><li>|</li>
+          <li><a href="/tagged/お知らせ" title="お知らせ">お知らせ</a></li><li>|</li>
+          <li><a href="/tagged/メニュー" title="メニュー">メニュー</a></li><li>|</li>
+          {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li><li>|</li>{/block:Pages}{/block:HasPages}
+          <li><a href="/#contact" title="お問い合わせ">お問い合わせ</a></li>
+        </ol>
+      </nav>
+      <span><a href="http://www.facebook.com/yamanopanya" title="フェイスブック" class="footer-fb">フェイスブック</a></span>
+      <span>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a>, all rights reserved.</span>
+      <div class="footer-logo"></div>
+    </div>
   </footer>
 </article>
 <!-- jQuery libs and scripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/7gbg36y/z5eo119z8/scripts.js"></script>
 <script type="text/javascript"> // Minimized Google Analytics code
 $(window).on('load',function(){
   $.getScript('//www.google-analytics.com/analytics.js');
@@ -171,6 +330,11 @@ $(window).on('load',function(){
   };
   ga.q = [['create', 'UA-54537535-1', 'auto'], ['send', 'pageview']]
   ga.l = 1 * new Date();
+});
+</script>
+<script type="text/javascript"> // Generate notification output
+$(document).ready(function(){
+  $('#news-contents').notifyGen();
 });
 </script>
 </body>
